@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santa Rosa Art Trail</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="assets\icon\favicon.png">
+</head>
+<body>
+
+<div class="liquid-bg"><span></span><span></span><span></span></div>
+
+<header class="home-header glass">
+  <p class="eyebrow-free">A blogsite / HCI-adjacent field project</p>
+  <h1>Santa Rosa Art Trail</h1>
+  <p>Ten artworks and artforms encountered in one walkthrough. Scroll to follow the route, click a stop to step in.</p>
+</header>
+
+<div class="home-counter glass">
+  <span>Stops: <strong id="artwork-count">0</strong></span>
+</div>
+
+<main class="route-wrap">
+  <svg class="route-svg" id="routeSvg" preserveAspectRatio="none"></svg>
+  <div class="route-nodes" id="routeNodes"></div>
+</main>
+
+<div class="veil" id="veil"></div>
+
+<script src="js/data.js"></script>
+<script src="js/route.js"></script>
+</body>
+</html>
