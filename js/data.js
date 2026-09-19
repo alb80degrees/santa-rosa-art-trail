@@ -73,48 +73,4 @@ const ARTWORKS = [
     ],
     contributor: "Template (delete this entry once real entries are in)",
   },
-    {
-    id: "sample-church-facade",
-    title: "Sample Entry — Sta. Rosa de Lima Parish Facade Relief",
-    artist: "Unknown",
-    type: "Architectural relief / Religious art",
-    locationName: "Near the entrance, right-hand wall",
-    year: "19th century (restored)",
-    description:
-      "This is a placeholder entry showing the expected format. Replace the text in every field, add 3-5 of your own photographs to assets/artworks/sample-church-facade/, and rename the folder and id to match your artwork.",
-    analysis:
-      "Write your own interpretation here: what does the piece communicate, what artistic techniques or materials stand out, and why does it matter to the people of Santa Rosa? This section should read as your voice, not a textbook summary.",
-    sources: [
-      "Example: Municipality of Santa Rosa Tourism Office, official brochure",
-      "Example: Interview with parish caretaker, August 2026",
-    ],
-    photos: [
-      "assets/artworks/sample-church-facade/1.jpg",
-      "assets/artworks/sample-church-facade/2.jpg",
-      "assets/artworks/sample-church-facade/3.jpg",
-    ],
-    contributor: "Template (delete this entry once real entries are in)",
-  },
-    {
-    id: "sample-church-facade",
-    title: "Sample Entry — Sta. Rosa de Lima Parish Facade Relief",
-    artist: "Unknown",
-    type: "Architectural relief / Religious art",
-    locationName: "Near the entrance, right-hand wall",
-    year: "19th century (restored)",
-    description:
-      "This is a placeholder entry showing the expected format. Replace the text in every field, add 3-5 of your own photographs to assets/artworks/sample-church-facade/, and rename the folder and id to match your artwork.",
-    analysis:
-      "Write your own interpretation here: what does the piece communicate, what artistic techniques or materials stand out, and why does it matter to the people of Santa Rosa? This section should read as your voice, not a textbook summary.",
-    sources: [
-      "Example: Municipality of Santa Rosa Tourism Office, official brochure",
-      "Example: Interview with parish caretaker, August 2026",
-    ],
-    photos: [
-      "assets/artworks/sample-church-facade/1.jpg",
-      "assets/artworks/sample-church-facade/2.jpg",
-      "assets/artworks/sample-church-facade/3.jpg",
-    ],
-    contributor: "Template (delete this entry once real entries are in)",
-  },
 ];

@@ -32,7 +32,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) — it's the only file you need to read
 ## Roles
 
 - **Compiler / maintainer:** reviews and merges everyone's pull requests, keeps `main` deployable, handles the design system.
-- **Contributors (4):** 2 artworks each, following `CONTRIBUTING.md`.
+- **Contributors (5):** 2 artworks each, following `CONTRIBUTING.md`.
 
 ## Deployment
 
