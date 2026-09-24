@@ -41,8 +41,7 @@ const ARTWORKS = [
     analysis:
       "Mendoza effectively uses a split composition to contrast day and night, blending local environmental themes with cultural heritage. The boy's protective gesture over the turtle, combined with the solemn, lantern-lit procession to the church, creates a rich narrative about stewardship, faith, and rural life.", 
     sources: [
-      "Artwork label, Life 'n Arts Gallery", 
-      "Sano Ai! Exhibition Signage" 
+      "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
     photos: [
       "assets/artworks/thefoundation/IMG_2694.JPG",
@@ -62,8 +61,7 @@ const ARTWORKS = [
     "description": "This wood inlay artwork depicts a panoramic view of Paris, featuring prominent landmarks such as the Eiffel Tower and a windmill representing the Moulin Rouge. The cityscape is composed of various distinct pieces of wood, utilizing different natural tones and grains to form buildings, a bridge, and architectural details. The piece measures 14 x 35 x 2 inches.",
     "analysis": "The artist effectively uses the photographic intarsia technique to create depth and contrast purely through the natural characteristics of the wood. By meticulously arranging light and dark wood fragments, the composition achieves a striking three-dimensional effect, casting natural 'shadows' across the Parisian structures and drawing the eye across the varied textures of the city skyline.",
     "sources": [
-      "Artwork label, Life 'n Arts Gallery",
-      "Visual observation of the artwork"
+      "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
     "photos": [
       "assets/artworks/parismoulin/IMG_2691.JPG",

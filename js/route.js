@@ -14,7 +14,7 @@ document.getElementById("artwork-count").textContent = ARTWORKS.length;
 // Decrease these numbers to bring the stops closer together. 
 // For example, changing 260/320 to 180/220:
 const SPACING = window.innerWidth < 720 ? 180 : 220;
-const TOP_PAD = 220;
+const TOP_PAD = window.innerWidth < 720 ? 340 : 220;
 const BOTTOM_PAD = 260;
 const AMPLITUDE = window.innerWidth < 720 ? 18 : 30; // how far stops swing left/right, in %
 
@@ -58,9 +58,8 @@ function render() {
 
   const d = buildPathD(points, widthPx);
   svg.innerHTML = `
-    <path d="${d}" fill="none" stroke="rgba(247,243,234,0.16)" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round" />
+    <path class="route-path" d="${d}" fill="none" stroke="rgba(0, 0, 0, 0.12)" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round" />
   `;
-
   nodesLayer.innerHTML = "";
   ARTWORKS.forEach((art, i) => {
     const p = points[i];

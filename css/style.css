@@ -59,23 +59,50 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
   overflow: hidden;
   background-color: var(--bg-archival);
+  /* New: Archival grid pattern using a faint ink tone */
+  background-image: 
+    linear-gradient(rgba(90, 88, 84, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90, 88, 84, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@keyframes grainShift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-1%, 1%); }
+  50% { transform: translate(1%, -1%); }
+  75% { transform: translate(-1%, -1%); }
 }
 
 .liquid-bg::before {
   content: "";
   position: absolute;
-  inset: 0;
-  opacity: 0.03;
+  /* Expand dimensions to hide edges during movement */
+  width: 104%;
+  height: 104%;
+  top: -2%;
+  left: -2%;
+  opacity: 0.06;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* The steps() function creates a vintage, flickering rhythm rather than smooth gliding */
+  animation: grainShift 3s steps(4) infinite;
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(4vw, -6vh) scale(1.1); }
+  66% { transform: translate(-3vw, 5vh) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
 }
 
 .liquid-bg span {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.55;
-  will-change: transform;
+  /* Retain your existing properties, add the animation */
+  animation: drift 18s ease-in-out infinite alternate;
 }
+
+/* Stagger the timing so the gradients move independently */
+.liquid-bg span:nth-child(1) { animation-duration: 22s; }
+.liquid-bg span:nth-child(2) { animation-duration: 17s; }
+.liquid-bg span:nth-child(3) { animation-duration: 25s; }
 
 .liquid-bg span:nth-child(1) {
   width: 50vw; height: 50vw;
@@ -129,6 +156,15 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
   z-index: 2;
+}
+
+@keyframes dashFlow {
+  /* Must be a multiple of the dasharray total (2 + 14 = 16) for a seamless loop */
+  to { stroke-dashoffset: -32; }
+}
+
+.route-path {
+  animation: dashFlow 3s linear infinite;
 }
 
 .home-header {
@@ -312,18 +348,32 @@ a { color: inherit; text-decoration: none; }
 }
 
 .gallery {
+  /* Force a uniform shape for all artworks (e.g., 4 / 3, 1 / 1, or 16 / 9) */
+  aspect-ratio: 4 / 3; 
+  /* Allow the height to scale naturally with the aspect ratio */
+  height: auto; 
+  
+  /* Keep your existing properties */
   position: relative;
   width: 100%;
-  height: 100%;
   max-height: 84dvh;
   background: var(--bg-card);
   padding: 18px;
   border-radius: 4px;
-  box-shadow: 
-    0 24px 50px -15px rgba(25, 23, 20, 0.12),
-    0 0 0 1px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  min-width: 0;
+}
+
+.gallery__slide {
+  /* Force the image to fill the entire container, cropping the edges if necessary */
+  background-size: cover; 
+  background-position: center;
+  
+  /* Keep your existing properties */
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-subtle);
+  background-repeat: no-repeat;
 }
 
 .gallery__track {
@@ -332,16 +382,6 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   transition: transform 0.65s var(--ease-curated);
   will-change: transform;
-}
-
-.gallery__slide {
-  flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-subtle);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* Gallery Arrows */
@@ -531,4 +571,25 @@ a { color: inherit; text-decoration: none; }
 .veil.active {
   opacity: 1;
   pointer-events: all;
+}
+
+/* Add this to the bottom of style.css */
+@media (max-width: 720px) {
+  .home-header {
+    top: 16px;
+    left: 16px;
+    right: 16px; /* Forces it to respect the right edge */
+    width: auto;
+    max-width: none;
+    padding: 20px;
+  }
+  
+  .home-header h1 {
+    font-size: 26px; /* Slightly smaller for mobile */
+  }
+
+  .home-counter {
+    bottom: 16px;
+    left: 16px;
+  }
 }
