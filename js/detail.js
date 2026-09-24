@@ -56,13 +56,23 @@ if (!art) {
       </div>
 
       <section class="detail-section">
-        <h2>About this piece</h2>
+        <h2>Description</h2>
         <p>${art.description}</p>
       </section>
 
       <section class="detail-section">
-        <h2>Our take</h2>
+        <h2>Analysis</h2>
         <p>${art.analysis}</p>
+      </section>
+      
+      <section class="detail-section">
+        <h2>Interpretation</h2>
+        <p>${art.interpretation}</p>
+      </section>
+      
+      <section class="detail-section">
+        <h2>Judgement</h2>
+        <p>${art.judgement}</p>
       </section>
 
       <section class="detail-section">

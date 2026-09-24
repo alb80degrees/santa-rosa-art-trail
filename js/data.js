@@ -12,10 +12,14 @@
  *   type        - e.g. "Mural", "Sculpture", "Relief", "Installation"
  *   locationName- where it sits within the venue, e.g. "Left wall, near the entrance"
  *   year        - year made, or "Unknown"
- *   description - factual: what it looks like, materials, size, history (2-4 sentences)
- *   analysis    - YOUR personal take: meaning, artistic features, cultural
- *                 significance, relevance to the community (this must be your
- *                 own hand-typed interpretation, not copied from anywhere)
+ * ARTWORK DATA
+ * ------------
+ * Field guide:
+ *   description    - factual: what it looks like, materials, size, history
+ *   analysis       - how the elements of art and principles of design are used
+ *   interpretation - the meaning, theme, or mood the artist is communicating
+ *   judgement      - your evaluation of the artwork's success or impact
+ *
  *   sources     - array of strings: websites, books, interviews used
  *   photos      - array of 3-5 image paths. Put your images in
  *                 assets/artworks/<id>/ and list them here in the order
@@ -36,10 +40,10 @@ const ARTWORKS = [
     type: "Oil on canvas", 
     locationName: "Life 'n Arts Gallery", 
     year: "2026", 
-    description:
-      "This 48 by 36 inch painting features a boy wearing a salakot standing in shallow waters next to a large sea turtle. Behind him, a group of people carry glowing lanterns through the water toward a stone church, set against a split sky transitioning from a bright sunset to night.", 
-    analysis:
-      "Mendoza effectively uses a split composition to contrast day and night, blending local environmental themes with cultural heritage. The boy's protective gesture over the turtle, combined with the solemn, lantern-lit procession to the church, creates a rich narrative about stewardship, faith, and rural life.", 
+    description: "This 48 by 36 inch painting features a boy wearing a salakot standing in shallow waters next to a large sea turtle. Behind him, a group of people carry glowing lanterns through the water toward a stone church, set against a split sky transitioning from a bright sunset to night.", 
+    analysis: "Mendoza effectively uses a split composition to contrast day and night. The visual weight is anchored by the figures in the foreground, while the vibrant gradient of the sunset creates a strong atmospheric backdrop.", 
+    interpretation: "Blending local environmental themes with cultural heritage, the boy's protective gesture over the turtle, combined with the solemn, lantern-lit procession to the church, creates a rich narrative about stewardship, faith, and rural life.", 
+    judgement: "The piece successfully evokes a sense of local pride and environmental responsibility. Its vibrant colors and clear narrative make it a compelling cultural artwork.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
@@ -51,24 +55,26 @@ const ARTWORKS = [
     ],
     contributor: "Alvin Jan L. Calambro"
   },
-    {
-    "id": "paris-moulin-rouge-intarsia",
-    "title": "Paris (Moulin Rouge)",
-    "artist": "Eugie Varona Dela Cruz",
-    "type": "Photographic Intarsia (Wood Inlay)",
-    "locationName": "Life 'n Arts Gallery",
-    "year": "2025",
-    "description": "This wood inlay artwork depicts a panoramic view of Paris, featuring prominent landmarks such as the Eiffel Tower and a windmill representing the Moulin Rouge. The cityscape is composed of various distinct pieces of wood, utilizing different natural tones and grains to form buildings, a bridge, and architectural details. The piece measures 14 x 35 x 2 inches.",
-    "analysis": "The artist effectively uses the photographic intarsia technique to create depth and contrast purely through the natural characteristics of the wood. By meticulously arranging light and dark wood fragments, the composition achieves a striking three-dimensional effect, casting natural 'shadows' across the Parisian structures and drawing the eye across the varied textures of the city skyline.",
-    "sources": [
+  {
+    id: "paris-moulin-rouge-intarsia",
+    title: "Paris (Moulin Rouge)",
+    artist: "Eugie Varona Dela Cruz",
+    type: "Photographic Intarsia (Wood Inlay)",
+    locationName: "Life 'n Arts Gallery",
+    year: "2025",
+    description: "This wood inlay artwork depicts a panoramic view of Paris, featuring prominent landmarks such as the Eiffel Tower and a windmill representing the Moulin Rouge. The piece measures 14 x 35 x 2 inches and is composed of various distinct pieces of wood.",
+    analysis: "The artist uses the natural tones and grains of the wood to form buildings, a bridge, and architectural details. By meticulously arranging light and dark wood fragments, the composition creates depth and casts natural 'shadows' across the Parisian structures.",
+    interpretation: "The photographic intarsia technique translates a bustling, iconic city skyline into an earthy, warm, and highly textural medium, grounding a famous global landmark in organic materials.",
+    judgement: "The meticulous craftsmanship and innovative use of natural wood grain make this a masterful and visually captivating display of intarsia.",
+    sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
-    "photos": [
+    photos: [
       "assets/artworks/parismoulin/IMG_2691.JPG",
       "assets/artworks/parismoulin/IMG_2690.JPG",
       "assets/artworks/parismoulin/IMG_2689.JPG",
       "assets/artworks/parismoulin/IMG_2688.JPG"
     ],
-    "contributor": "Alvin Jan L. Calambro"
+    contributor: "Alvin Jan L. Calambro"
   }
 ];
