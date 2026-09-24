@@ -30,47 +30,47 @@
 
 const ARTWORKS = [
   {
-    id: "sample-church-facade",
-    title: "Sample Entry — Sta. Rosa de Lima Parish Facade Relief",
-    artist: "Unknown",
-    type: "Architectural relief / Religious art",
-    locationName: "Near the entrance, right-hand wall",
-    year: "19th century (restored)",
+    id: "the-foundation",
+    title: "The Foundation",
+    artist: "Buhay Mendoza", 
+    type: "Oil on canvas", 
+    locationName: "Life 'n Arts Gallery", 
+    year: "2026", 
     description:
-      "This is a placeholder entry showing the expected format. Replace the text in every field, add 3-5 of your own photographs to assets/artworks/sample-church-facade/, and rename the folder and id to match your artwork.",
+      "This 48 by 36 inch painting features a boy wearing a salakot standing in shallow waters next to a large sea turtle. Behind him, a group of people carry glowing lanterns through the water toward a stone church, set against a split sky transitioning from a bright sunset to night.", 
     analysis:
-      "Write your own interpretation here: what does the piece communicate, what artistic techniques or materials stand out, and why does it matter to the people of Santa Rosa? This section should read as your voice, not a textbook summary.",
+      "Mendoza effectively uses a split composition to contrast day and night, blending local environmental themes with cultural heritage. The boy's protective gesture over the turtle, combined with the solemn, lantern-lit procession to the church, creates a rich narrative about stewardship, faith, and rural life.", 
     sources: [
-      "Example: Municipality of Santa Rosa Tourism Office, official brochure",
-      "Example: Interview with parish caretaker, August 2026",
+      "Artwork label, Life 'n Arts Gallery", 
+      "Sano Ai! Exhibition Signage" 
     ],
     photos: [
-      "assets/artworks/sample-church-facade/1.jpg",
-      "assets/artworks/sample-church-facade/2.jpg",
-      "assets/artworks/sample-church-facade/3.jpg",
+      "assets/artworks/thefoundation/IMG_2694.JPG",
+      "assets/artworks/thefoundation/IMG_2695.JPG", 
+      "assets/artworks/thefoundation/IMG_2699.JPG", 
+      "assets/artworks/thefoundation/IMG_2700.JPG"
     ],
-    contributor: "Template (delete this entry once real entries are in)",
+    contributor: "Alvin Jan L. Calambro"
   },
     {
-    id: "sample-church-facade",
-    title: "Sample Entry — Sta. Rosa de Lima Parish Facade Relief",
-    artist: "Unknown",
-    type: "Architectural relief / Religious art",
-    locationName: "Near the entrance, right-hand wall",
-    year: "19th century (restored)",
-    description:
-      "This is a placeholder entry showing the expected format. Replace the text in every field, add 3-5 of your own photographs to assets/artworks/sample-church-facade/, and rename the folder and id to match your artwork.",
-    analysis:
-      "Write your own interpretation here: what does the piece communicate, what artistic techniques or materials stand out, and why does it matter to the people of Santa Rosa? This section should read as your voice, not a textbook summary.",
-    sources: [
-      "Example: Municipality of Santa Rosa Tourism Office, official brochure",
-      "Example: Interview with parish caretaker, August 2026",
+    "id": "paris-moulin-rouge-intarsia",
+    "title": "Paris (Moulin Rouge)",
+    "artist": "Eugie Varona Dela Cruz",
+    "type": "Photographic Intarsia (Wood Inlay)",
+    "locationName": "Life 'n Arts Gallery",
+    "year": "2025",
+    "description": "This wood inlay artwork depicts a panoramic view of Paris, featuring prominent landmarks such as the Eiffel Tower and a windmill representing the Moulin Rouge. The cityscape is composed of various distinct pieces of wood, utilizing different natural tones and grains to form buildings, a bridge, and architectural details. The piece measures 14 x 35 x 2 inches.",
+    "analysis": "The artist effectively uses the photographic intarsia technique to create depth and contrast purely through the natural characteristics of the wood. By meticulously arranging light and dark wood fragments, the composition achieves a striking three-dimensional effect, casting natural 'shadows' across the Parisian structures and drawing the eye across the varied textures of the city skyline.",
+    "sources": [
+      "Artwork label, Life 'n Arts Gallery",
+      "Visual observation of the artwork"
     ],
-    photos: [
-      "assets/artworks/sample-church-facade/1.jpg",
-      "assets/artworks/sample-church-facade/2.jpg",
-      "assets/artworks/sample-church-facade/3.jpg",
+    "photos": [
+      "assets/artworks/parismoulin/IMG_2691.JPG",
+      "assets/artworks/parismoulin/IMG_2690.JPG",
+      "assets/artworks/parismoulin/IMG_2689.JPG",
+      "assets/artworks/parismoulin/IMG_2688.JPG"
     ],
-    contributor: "Template (delete this entry once real entries are in)",
-  },
+    "contributor": "Alvin Jan L. Calambro"
+  }
 ];

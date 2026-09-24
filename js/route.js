@@ -11,7 +11,9 @@ const nodesLayer = document.getElementById("routeNodes");
 
 document.getElementById("artwork-count").textContent = ARTWORKS.length;
 
-const SPACING = window.innerWidth < 720 ? 260 : 320; // vertical gap between stops
+// Decrease these numbers to bring the stops closer together. 
+// For example, changing 260/320 to 180/220:
+const SPACING = window.innerWidth < 720 ? 180 : 220;
 const TOP_PAD = 220;
 const BOTTOM_PAD = 260;
 const AMPLITUDE = window.innerWidth < 720 ? 18 : 30; // how far stops swing left/right, in %
@@ -22,7 +24,8 @@ function computePoints() {
 
   const points = ARTWORKS.map((_, i) => {
     const y = TOP_PAD + i * SPACING;
-    const x = 50 + AMPLITUDE * Math.sin(i * 1.05);
+    // Increase 1.05 to a number like 2.4 so the wave hits its peaks faster
+    const x = 50 + AMPLITUDE * Math.sin(i * 1.8);
     return { x, y };
   });
 

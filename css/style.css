@@ -184,13 +184,22 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Map Stops */
+/* Base size for mobile screens (slightly larger than original) */
 .route-node {
   position: absolute;
-  width: 80px;
-  height: 104px;
+  width: 100px; 
+  height: 130px; 
   cursor: pointer;
   transform: translate(-50%, -50%);
   transition: transform 0.4s var(--ease-curated);
+}
+
+/* Larger size for tablets and desktops */
+@media (min-width: 720px) {
+  .route-node {
+    width: 140px;
+    height: 180px;
+  }
 }
 
 .route-node__ring {
