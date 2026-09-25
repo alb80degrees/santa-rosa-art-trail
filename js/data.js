@@ -92,11 +92,11 @@ const ARTWORKS = [
     "Life 'n Arts Gallery, Santa Rosa, Laguna"
   ],
   photos: [
-    "assets/artworks/1944/IMG_2718.jpg",
-    "assets/artworks/1944/IMG_2717.jpg",
-    "assets/artworks/1944/IMG_2719.jpg",
-    "assets/artworks/1944/IMG_2721.jpg",
-    "assets/artworks/1944/IMG_2722.jpg"
+    "assets/artworks/1944/IMG_2718.JPG",
+    "assets/artworks/1944/IMG_2717.JPG",
+    "assets/artworks/1944/IMG_2719.JPG",
+    "assets/artworks/1944/IMG_2721.JPG",
+    "assets/artworks/1944/IMG_2722.JPG"
   ],
   contributor: "Darrel Jed R. Ramos"
   },
@@ -115,11 +115,11 @@ const ARTWORKS = [
     "Life 'n Arts Gallery, Santa Rosa, Laguna"
   ],
   photos: [
-    "assets/artworks/angnegosyante/IMG_2711.jpg",
-    "assets/artworks/angnegosyante/IMG_2710.jpg",
-    "assets/artworks/angnegosyante/IMG_2712.jpg",
-    "assets/artworks/angnegosyante/IMG_2714.jpg",
-    "assets/artworks/angnegosyante/IMG_2716.jpg"
+    "assets/artworks/angnegosyante/IMG_2711.JPG",
+    "assets/artworks/angnegosyante/IMG_2710.JPG",
+    "assets/artworks/angnegosyante/IMG_2712.JPG",
+    "assets/artworks/angnegosyante/IMG_2714.JPG",
+    "assets/artworks/angnegosyante/IMG_2716.JPG"
   ],
   contributor: "Darrel Jed R. Ramos"
   },
