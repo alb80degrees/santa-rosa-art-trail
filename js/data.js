@@ -70,10 +70,10 @@ const ARTWORKS = [
       "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
     photos: [
-      "assets/artworks/parismoulin/IMG_2691.JPG",
       "assets/artworks/parismoulin/IMG_2690.JPG",
-      "assets/artworks/parismoulin/IMG_2689.JPG",
-      "assets/artworks/parismoulin/IMG_2688.JPG"
+      "assets/artworks/parismoulin/IMG_2691.JPG",
+      "assets/artworks/parismoulin/IMG_2693.JPG",
+      "assets/artworks/parismoulin/IMG_2694.JPG"
     ],
     contributor: "Alvin Jan L. Calambro"
   },
