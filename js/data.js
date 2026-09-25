@@ -40,10 +40,10 @@ const ARTWORKS = [
     type: "Oil on canvas", 
     locationName: "Life 'n Arts Gallery", 
     year: "2026", 
-    description: "This 48 by 36 inch painting features a boy wearing a salakot standing in shallow waters next to a large sea turtle. Behind him, a group of people carry glowing lanterns through the water toward a stone church, set against a split sky transitioning from a bright sunset to night.", 
-    analysis: "Mendoza effectively uses a split composition to contrast day and night. The visual weight is anchored by the figures in the foreground, while the vibrant gradient of the sunset creates a strong atmospheric backdrop.", 
-    interpretation: "Blending local environmental themes with cultural heritage, the boy's protective gesture over the turtle, combined with the solemn, lantern-lit procession to the church, creates a rich narrative about stewardship, faith, and rural life.", 
-    judgement: "The piece successfully evokes a sense of local pride and environmental responsibility. Its vibrant colors and clear narrative make it a compelling cultural artwork.",
+    description: "Measuring 48 by 36 inches, this oil painting shows a boy wearing a salakot standing in shallow water next to a sea turtle. Behind them, people carry lanterns through the water toward a stone church. The sky is split between a bright sunset on the left and a dark night on the right.", 
+    analysis: "Mendoza uses a split composition to contrast the warm sunset with the cool night. The boy and turtle anchor the foreground, balancing the lantern procession in the background. Soft shading gives the figures depth, while the sky's colors and the water's reflection create a strong backdrop.", 
+    interpretation: "The piece connects environmental care with cultural heritage. By placing the boy protecting the turtle next to a religious procession, the artwork highlights the link between faith, rural community life, and nature.", 
+    judgement: "The artwork successfully merges environmental themes with a cultural story. Its clear lighting, sharp details, and balanced layout make it a strong tribute to local heritage.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
@@ -62,10 +62,10 @@ const ARTWORKS = [
     type: "Photographic Intarsia (Wood Inlay)",
     locationName: "Life 'n Arts Gallery",
     year: "2025",
-    description: "This wood inlay artwork depicts a panoramic view of Paris, featuring prominent landmarks such as the Eiffel Tower and a windmill representing the Moulin Rouge. The piece measures 14 x 35 x 2 inches and is composed of various distinct pieces of wood.",
-    analysis: "The artist uses the natural tones and grains of the wood to form buildings, a bridge, and architectural details. By meticulously arranging light and dark wood fragments, the composition creates depth and casts natural 'shadows' across the Parisian structures.",
-    interpretation: "The photographic intarsia technique translates a bustling, iconic city skyline into an earthy, warm, and highly textural medium, grounding a famous global landmark in organic materials.",
-    judgement: "The meticulous craftsmanship and innovative use of natural wood grain make this a masterful and visually captivating display of intarsia.",
+    description: "Measuring 14 by 35 by 2 inches, this wood inlay artwork shows a wide view of the Paris skyline. The piece features landmarks like the Eiffel Tower and the Moulin Rouge windmill, built from many pieces of natural cut wood.",
+    analysis: "Dela Cruz uses the natural textures, grains, and tones of wood to build the cityscape. By placing light and dark wood pieces next to each other, the artist creates depth and natural-looking shadows without using any paint.",
+    interpretation: "The artwork recreates a famous city skyline using a warm, earthy medium. By building Paris out of wood, the piece creates an interesting contrast between man-made buildings and natural materials.",
+    judgement: "With its careful craftsmanship and clever use of wood grain, the piece is a visually striking display of wood inlay. Its clear details and rich textures make it a unique rendering of the city.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna",
     ],
@@ -86,14 +86,14 @@ const ARTWORKS = [
   year: "2026",
   description: "Measuring 24 by 24 inches, this oil painting depicts a young Filipino guerrilla soldier sitting outdoors in front of a rural backdrop featuring a nipa hut and an 'ARMY NAVY' sign. The smiling soldier holds a rifle in one hand and a steaming metal mug in the other, wearing an ammunition bandolier across his chest. Beside him sit an open can of SPAM, a military helmet, a small campfire boiling a pot, and a plate served with toast, sliced luncheon meat, and fried eggs.",
   analysis: "Mendoza utilizes a warm, earthy color palette dominated by ochres, khaki browns, and muted greens, contrasted against a crisp blue sky. The central figure anchors the composition in a triangular posture, balanced by the vertical line of the upright rifle on the left. Soft volumetric shading and illustrative, caricature-like proportions lend depth and character to the subject, while fine detail work on the campfire, food, and military gear creates focal interest throughout the lower half of the canvas.",
-  interpretation: "The piece captures a moment of wartime respite and cultural adaptation during World War II, specifically referencing the liberation era of 1944. By combining the soldier's cheerful demeanor with American rations like SPAM and Army-issue gear alongside native rural surroundings, the artwork reflects on the historical introduction of Western commodities into Filipino daily life and the resilient, optimistic spirit of Filipino fighters amidst conflict.",
+  interpretation: "It captures a moment of wartime respite and cultural adaptation during World War II, specifically referencing the liberation era of 1944. By combining the soldier's cheerful demeanor with American rations like SPAM and Army-issue gear alongside native rural surroundings, the artwork reflects on the historical introduction of Western commodities into Filipino daily life and the resilient, optimistic spirit of Filipino fighters amidst conflict.",
   judgement: "The artwork successfully blends historical narrative with an engaging, approachable illustrative style. Its balance of lighthearted charm, nostalgic detailing, and tight compositional harmony makes it an effective and culturally evocative portrayal of local wartime history.",
   sources: [
     "Life 'n Arts Gallery, Santa Rosa, Laguna"
   ],
   photos: [
-    "assets/artworks/1944/IMG_2717.jpg",
     "assets/artworks/1944/IMG_2718.jpg",
+    "assets/artworks/1944/IMG_2717.jpg",
     "assets/artworks/1944/IMG_2719.jpg",
     "assets/artworks/1944/IMG_2721.jpg",
     "assets/artworks/1944/IMG_2722.jpg"
@@ -115,8 +115,8 @@ const ARTWORKS = [
     "Life 'n Arts Gallery, Santa Rosa, Laguna"
   ],
   photos: [
-    "assets/artworks/angnegosyante/IMG_2710.jpg",
     "assets/artworks/angnegosyante/IMG_2711.jpg",
+    "assets/artworks/angnegosyante/IMG_2710.jpg",
     "assets/artworks/angnegosyante/IMG_2712.jpg",
     "assets/artworks/angnegosyante/IMG_2714.jpg",
     "assets/artworks/angnegosyante/IMG_2716.jpg"
