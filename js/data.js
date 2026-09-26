@@ -160,10 +160,10 @@ const ARTWORKS = [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
-      "assets/artworks/parischampselysees/paris-champs1.jpg",
-      "assets/artworks/parischampselysees/paris-champs2.jpg",
-      "assets/artworks/parischampselysees/paris-champs3.jpg",
-      "assets/artworks/parischampselysees/paris-champs4.jpg"
+      "assets/artworks/parischampselysees/paris-champs1.JPG",
+      "assets/artworks/parischampselysees/paris-champs2.JPG",
+      "assets/artworks/parischampselysees/paris-champs3.JPG",
+      "assets/artworks/parischampselysees/paris-champs4.JPG"
     ],
     contributor: "Revo Ivan E. Trinidad",
   },
