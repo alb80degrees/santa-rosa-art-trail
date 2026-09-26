@@ -139,9 +139,9 @@ const ARTWORKS = [
     ],
     photos: [
       "assets/artworks/thechoosing/the-choosing-1.jpg",
-      "assets/artworks/thechoosing/the-choosing-2.jpg",
-      "assets/artworks/thechoosing/the-choosing-3.jpg",
-      "assets/artworks/thechoosing/the-choosing-4.jpg"
+      "assets/artworks/thechoosing/the-choosing-2.JPG",
+      "assets/artworks/thechoosing/the-choosing-3.JPG",
+      "assets/artworks/thechoosing/the-choosing-4.JPG"
     ],
     contributor: "Revo Ivan E. Trinidad",
   },
