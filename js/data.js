@@ -40,12 +40,12 @@ const ARTWORKS = [
     type: "Oil on canvas",
     locationName: "Life 'n Arts Gallery",
     year: "2026",
-    description: "Measuring 48 by 36 inches, this oil painting shows a boy wearing a salakot standing in shallow water next to a sea turtle. Behind them, people carry lanterns through the water toward a stone church. The sky is split between a bright sunset on the left and a dark night on the right.",
-    analysis: "Mendoza uses a split composition to contrast the warm sunset with the cool night. The boy and turtle anchor the foreground, balancing the lantern procession in the background. Soft shading gives the figures depth, while the sky's colors and the water's reflection create a strong backdrop.",
-    interpretation: "The piece connects environmental care with cultural heritage. By placing the boy protecting the turtle next to a religious procession, the artwork highlights the link between faith, rural community life, and nature.",
-    judgement: "The artwork successfully merges environmental themes with a cultural story. Its clear lighting, sharp details, and balanced layout make it a strong tribute to local heritage.",
+    description: "This oil painting is huge, measuring about 48 by 36 inches. The main focus is a young boy wearing a traditional salakot (hat) and a yellow shirt with blue shorts. He is standing in the water holding a paddle in his right hand, and his left hand is reached out with the palm open, like he is protecting the giant sea turtle next to him or telling someone to stop. In the background, there is a stone church and a group of people walking through the water carrying lanterns. The sky has a bright sunset on the left horizon with yellow and orange colors, but the rest of the sky is dark blue, like night is falling.",
+    analysis: "Mendoza uses a lot of contrast in this piece. The bright, warm colors of the sunset on the left make the boy stand out, while the rest of the painting uses cooler, darker blues for the night sky and water. The boy and the turtle are big in the foreground, which balances out the smaller figures in the background. The lighting is dramatic,the sunset lights up the boy's face and shirt, while the background is shadowy. The composition leads your eye from the boy to the church in the back.",
+    interpretation: "I think this painting is about protecting nature and tradition. The boy is protecting the turtle, which represents nature, while the people in the back are doing a religious procession. It connects the idea of faith and community with taking care of the environment. The boy looks serious, like he has a big responsibility to protect both the turtle and their heritage.",
+    judgement: "I think this artwork is really effective. The colors are vibrant, especially the sunset. The way the boy is posed with his hand out makes it feel like an active scene, not just a portrait. It successfully mixes the local culture (the church, the hat) with an environmental message. It's definitely a standout piece in the gallery.",
     sources: [
-      "Life 'n Arts Gallery, Santa Rosa, Laguna",
+      "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
       "assets/artworks/thefoundation/IMG_2694.JPG",
@@ -62,12 +62,12 @@ const ARTWORKS = [
     type: "Photographic Intarsia (Wood Inlay)",
     locationName: "Life 'n Arts Gallery",
     year: "2025",
-    description: "Measuring 14 by 35 by 2 inches, this wood inlay artwork shows a wide view of the Paris skyline. The piece features landmarks like the Eiffel Tower and the Moulin Rouge windmill, built from many pieces of natural cut wood.",
-    analysis: "Dela Cruz uses the natural textures, grains, and tones of wood to build the cityscape. By placing light and dark wood pieces next to each other, the artist creates depth and natural-looking shadows without using any paint.",
-    interpretation: "The artwork recreates a famous city skyline using a warm, earthy medium. By building Paris out of wood, the piece creates an interesting contrast between man-made buildings and natural materials.",
-    judgement: "With its careful craftsmanship and clever use of wood grain, the piece is a visually striking display of wood inlay. Its clear details and rich textures make it a unique rendering of the city.",
+    description: "This piece is a wood inlay artwork that measures 14 by 35 by 2 inches. It shows a wide view of a city skyline, which looks like Paris. You can clearly see the Eiffel Tower right in the middle and a windmill on the right side, which is probably the Moulin Rouge. There are lots of blocky houses clustered on both sides. The whole thing is built out of different pieces of natural wood fitted together. At the very bottom, there are small square blocks of different wood colors lined up, maybe showing the different types of wood the artist used.",
+    analysis: "Instead of using paint, the artist uses the natural textures and different shades of wood to build the scene. The main board has a really strong wood grain that acts like the sky or the background. By placing light wood pieces next to dark ones, the artist makes the buildings stand out. The shapes are very geometric and blocky, which gives it a cool, stylized look. The way the wood grain flows in the background adds a lot of texture without making it look messy.",
+    interpretation: "The artwork recreates a famous city using a very natural and earthy medium. I think it creates a nice contrast because Paris is known for its big stone buildings, but here it is made entirely out of wood. It feels very warm and rustic. It shows how you can take a busy, modern city and represent it using simple, organic materials.",
+    judgement: "This piece is super impressive because of the careful craftsmanship. You can tell it took a lot of patience to cut and fit all those little wooden houses together. The clever use of the wood grain makes it visually striking, and the rich textures make it a very unique way to see the city. It is definitely one of the most unique pieces in the gallery.",
     sources: [
-      "Life 'n Arts Gallery, Santa Rosa, Laguna",
+      "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
       "assets/artworks/parismoulin/IMG_2690.JPG",
@@ -84,10 +84,10 @@ const ARTWORKS = [
     type: "Oil on canvas",
     locationName: "Life 'n Arts Gallery",
     year: "2026",
-    description: "Measuring 24 by 24 inches, this oil painting depicts a young Filipino guerrilla soldier sitting outdoors in front of a rural backdrop featuring a nipa hut and an 'ARMY NAVY' sign. The smiling soldier holds a rifle in one hand and a steaming metal mug in the other, wearing an ammunition bandolier across his chest. Beside him sit an open can of SPAM, a military helmet, a small campfire boiling a pot, and a plate served with toast, sliced luncheon meat, and fried eggs.",
-    analysis: "Mendoza utilizes a warm, earthy color palette dominated by ochres, khaki browns, and muted greens, contrasted against a crisp blue sky. The central figure anchors the composition in a triangular posture, balanced by the vertical line of the upright rifle on the left. Soft volumetric shading and illustrative, caricature-like proportions lend depth and character to the subject, while fine detail work on the campfire, food, and military gear creates focal interest throughout the lower half of the canvas.",
-    interpretation: "It captures a moment of wartime respite and cultural adaptation during World War II, specifically referencing the liberation era of 1944. By combining the soldier's cheerful demeanor with American rations like SPAM and Army-issue gear alongside native rural surroundings, the artwork reflects on the historical introduction of Western commodities into Filipino daily life and the resilient, optimistic spirit of Filipino fighters amidst conflict.",
-    judgement: "The artwork successfully blends historical narrative with an engaging, approachable illustrative style. Its balance of lighthearted charm, nostalgic detailing, and tight compositional harmony makes it an effective and culturally evocative portrayal of local wartime history.",
+    description: "This oil painting is 24 by 24 inches and shows a young Filipino guerrilla soldier sitting outside. He has a rural backdrop with a nipa hut and a sign that says 'ARMY NAVY'. The soldier is smiling and holding a rifle in one hand and a steaming metal mug in the other. He has an ammunition bandolier across his chest. Next to him on the ground, there is an open can of SPAM, a military helmet, a small campfire with a boiling pot, and a plate with toast, sliced luncheon meat, and fried eggs.",
+    analysis: "Mendoza uses a lot of warm, earthy colors like ochre, khaki brown, and muted greens, which really stand out against the crisp blue sky. The soldier is in the center and sits in a triangle shape, which makes the composition feel very stable. The rifle on the left adds a vertical line to balance it out. He uses shading to make the soldier look 3D, and the proportions are a bit cartoon-like, which gives the character a lot of personality. The fine details on the campfire, the food, and the military gear draw your eye to the bottom half of the canvas.",
+    interpretation: "This painting shows a quiet, peaceful moment during World War II, specifically in 1944 when the Philippines was being liberated. Even though it's wartime, the soldier is smiling and eating. I think it's interesting how the artist included American rations like SPAM and army gear next to the native rural surroundings. It reflects how Western products were introduced to Filipino daily life during the war, but it also shows the resilient and optimistic spirit of the Filipino fighters despite the conflict.",
+    judgement: "I really like this artwork because it blends a serious historical narrative with a very approachable, almost storybook illustration style. It doesn't just show the scary parts of war; it shows the human side. The balance of lighthearted charm, nostalgic details (like the SPAM), and the tight composition makes it a really effective and culturally meaningful piece of local history.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
@@ -107,10 +107,10 @@ const ARTWORKS = [
     type: "Oil on canvas",
     locationName: "Life 'n Arts Gallery",
     year: "2026",
-    description: "Measuring 36 by 24 inches, this oil painting portrays a smiling young Filipino girl dressed in traditional attire consisting of a white ruffled blouse and a vibrant red and yellow skirt with red hair ribbons. She is depicted as a vendor holding a wooden sign marked 'Carabao's Milk P2'. Beside her on a table sits a basket of glass milk bottles resting on a pink cloth, accompanied by a large metal milk churn, all set against a rural sunset landscape with a silhouette of a town and palm trees in the distance.",
-    analysis: "Mendoza utilizes a vertical composition where the standing central figure dominates the foreground. The color scheme contrasts warm golden-orange sunset tones in the sky with cool purple atmospheric silhouettes in the background, complemented by bright primaries in the clothing and fabric. Soft volumetric rendering gives form to the subject's face and puffed sleeves, while clear directional lighting from the golden sky highlights the textures of the glass bottles, fabric folds, and rustic wooden sign.",
-    interpretation: "The artwork celebrates rural Philippine livelihood, youth enterprise, and traditional agrarian culture. By portraying a young girl with an earnest smile proudly selling carabao's milk for two pesos, the painting evokes a nostalgic and romanticized glimpse into past provincial commerce, underscoring values of industriousness, simplicity, and community livelihood.",
-    judgement: "With its warm narrative charm, approachable figurative style, and rich cultural resonance, the painting succeeds in capturing an endearing portrait of Filipino folk heritage. The skillful balance between warm atmospheric light and detailed storytelling makes it a compelling and visually pleasing cultural piece.",
+    description: "Measuring 36 by 24 inches, this oil painting shows a smiling young Filipino girl dressed in traditional clothes. She wears a white ruffled blouse and a bright red and yellow skirt, with red ribbons in her hair. She is acting as a vendor, holding a wooden sign that says 'Carabao's Milk P2'. On the table next to her, there is a basket of glass milk bottles sitting on a pink cloth, along with a large metal milk churn. The background is a rural sunset landscape with the silhouette of a town and palm trees far away.",
+    analysis: "The composition is vertical, and the standing girl is the main focus in the foreground. The color scheme is really nice because it contrasts the warm, golden-orange sunset in the sky with the cool, purple silhouettes of the town in the background. Her bright red and yellow clothes also pop out against the scenery. The artist uses soft shading to give form to her face and puffed sleeves. The golden light from the sky highlights the textures of the glass bottles, the fabric folds, and the rustic wooden sign she is holding.",
+    interpretation: "This artwork is all about celebrating rural Philippine livelihood, youth enterprise, and traditional farming culture. By showing a young girl with an earnest smile proudly selling carabao's milk for just two pesos, the painting gives us a nostalgic look into past provincial business life. It highlights values like hard work, living a simple life, and how the community supports each other through local livelihoods.",
+    judgement: "With its warm, story-like charm and rich cultural details, the painting does a great job of capturing an endearing portrait of Filipino folk heritage. The artist did a great job balancing the warm atmospheric light with the detailed storytelling. It’s a very visually pleasing piece that makes you feel relaxed and nostalgic.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
@@ -130,10 +130,10 @@ const ARTWORKS = [
     type: "Oil on canvas",
     locationName: "Life 'n Arts Gallery",
     year: "Unknown",
-    description: "Measuring 48 by 36 inches, this oil painting by Buhay Mendoza shows a monochrome boy with a bright red nose sitting on a stool and sipping from a cup, set amidst surrounding water filled with half-eaten food and other items. He wears a modern-cut Barong Tagalog and a smiling burger hat, while floating whimsical objects like a Rubik's cube, a winged clock, and toys surround him as two hands gesture toward the scene.",
-    analysis: "Mendoza uses surrealist imagery and a central framing to critique political influence, setting the scene in the water to symbolize the constant flooding in the country. The grayscale boy anchors the foreground, representing an impressionable electorate, while the various floating items, a smiling burger hat, and directing hands symbolize the external pressures and populist spectacles that sway public opinion. The stark red nose adds a theatrical element, emphasizing how political campaigns often rely on performance and superficial charm to capture attention.",
-    interpretation: "The piece connects the vulnerability of decision making with the pervasive pressure of political dynasties and family expectations, all framed against the backdrop of recurring national hardships represented by the surrounding floodwaters. By placing the central figure amidst guiding hands and nostalgic symbols, the artwork highlights how voters are often steered toward choices dictated by familial loyalty, traditional allegiances, and entrenched political power rather than independent thought.",
-    judgement: "The artwork successfully merges surrealism with sharp political commentary on systemic issues like flooding and dynastic politics. Its clear lighting, detailed composition, and balanced layout make it a compelling and thought-provoking tribute to the complex realities of political choice and the grip of political dynasties.",
+    description: "This 48 by 36-inch oil painting is very surreal. It shows a boy drawn in grayscale (black and white) with a bright red nose, sitting on a stool and sipping from a cup. He is sitting in water that is filled with half-eaten food and random trash. He is wearing a modern-cut Barong Tagalog and a smiling burger hat. Floating around him are weird, whimsical objects like a Rubik's cube, a winged clock, and toys. In the background, two giant hands are gesturing and pointing toward him.",
+    analysis: "The painting is very surreal and uses a central framing to make a point about political influence. The artist set the scene in dirty water to symbolize the constant flooding problem in the Philippines. The grayscale boy represents the voters, who look a bit impressionable and stuck. The floating items, the silly burger hat, and the giant pointing hands symbolize the external pressures, distractions, and populist spectacles that try to sway public opinion. The bright red nose adds a theatrical, clown-like element, showing how political campaigns often rely on superficial charm and performance to get attention.",
+    interpretation: "I think this piece is about how hard it is to make good decisions when you are under a lot of pressure. The floodwaters represent the recurring national hardships we face. By putting the central figure in the water with all these guiding hands and nostalgic symbols, the artwork shows how voters are often pushed to choose leaders based on family loyalty, traditions, or political dynasties, rather than thinking for themselves. It's a critique of how we are influenced by our families and entrenched political powers.",
+    judgement: "This artwork is a bit creepy but it definitely makes you think. It successfully mixes surrealism with sharp political commentary on big issues like flooding and political dynasties. The lighting is clear, the composition is balanced, and the weird details (like the burger hat) make it a very compelling and thought-provoking piece about the complex realities of how we choose our leaders.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
@@ -143,7 +143,7 @@ const ARTWORKS = [
       "assets/artworks/thechoosing/the-choosing-3.JPG",
       "assets/artworks/thechoosing/the-choosing-4.JPG"
     ],
-    contributor: "Revo Ivan E. Trinidad",
+    contributor: "Revo Ivan E. Trinidad"
   },
   {
     id: "paris-champs-elysees",
@@ -152,10 +152,10 @@ const ARTWORKS = [
     type: "Photographic Intarsia (Wood Inlay)",
     locationName: "Life 'n Arts Gallery",
     year: "2025",
-    description: "Measuring 25.75 by 13.5 inches, this photographic intarsia (wood inlay) artwork by Eugie Varona Dela Cruz intricately showcases iconic Parisian landmarks like the Eiffel Tower and the Arc de Triomphe crafted from varying wood grains and tones.",
-    analysis: "Eugie Varona Dela Cruz utilizes diverse wood grains, tones, and textures to construct a geometric representation of Paris. The natural wood patterns, featuring circular rings in the background, create a sense of movement and depth, while distinct shades of timber define the buildings, the Arc de Triomphe, and the intricate structure of the Eiffel Tower.",
-    interpretation: "The piece bridges traditional craftsmanship with modern artistic vision by rendering a classic European urban landscape entirely through woodworking techniques. By substituting paint with natural materials, the artwork highlights the connection between structural engineering, architectural landmarks, and the organic beauty of the medium.",
-    judgement: "The artwork successfully combines intricate woodworking precision with striking visual composition. Its clean lines, clever use of natural grain patterns, and detailed inlay work make it a remarkable and enduring tribute to famous architectural design.",
+    description: "This is another photographic intarsia (wood inlay) piece by Eugie Varona Dela Cruz, measuring 25.75 by 13.5 inches. Just like the other Paris piece, it intricately showcases iconic Parisian landmarks, specifically focusing on the Eiffel Tower and the Arc de Triomphe. The entire image is crafted from varying pieces of wood, using their natural grains and tones to create the picture without any paint.",
+    analysis: "Dela Cruz uses a wide variety of wood grains, tones, and textures to build a geometric representation of the city. What's cool is how he uses the natural wood patterns, like the circular tree rings in the background, to create a sense of movement and depth. He uses distinct shades of timber to separate the buildings, making the Arc de Triomphe and the intricate metal structure of the Eiffel Tower stand out clearly from the sky and the ground.",
+    interpretation: "This piece bridges traditional woodworking craftsmanship with a modern artistic vision. By rendering a classic European urban landscape entirely through woodworking techniques, the artist highlights the connection between structural engineering and the organic beauty of nature. It shows that you don't always need paint or digital tools to create a highly detailed, modern-looking image; natural materials can do the job beautifully.",
+    judgement: "The artwork is amazing because of the intricate woodworking precision combined with a striking visual composition. The clean lines, the clever use of the natural grain patterns, and the super detailed inlay work make it a remarkable piece. It’s a great tribute to famous architectural design and a true display of the artist's patience and skill.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
@@ -165,6 +165,6 @@ const ARTWORKS = [
       "assets/artworks/parischampselysees/paris-champs3.JPG",
       "assets/artworks/parischampselysees/paris-champs4.JPG"
     ],
-    contributor: "Revo Ivan E. Trinidad",
-  },
+    contributor: "Revo Ivan E. Trinidad"
+  }
 ];

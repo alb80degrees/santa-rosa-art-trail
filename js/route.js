@@ -1,22 +1,32 @@
-/**
- * Builds an abstract winding path down the page, one stop per artwork, in the
- * order they appear in ARTWORKS. Nobody has to supply coordinates — the
- * position in the array IS the stop order (stop 1 = first encountered on the
- * walkthrough, and so on). Re-ordering the array re-orders the route.
- */
-
 const wrap = document.querySelector(".route-wrap");
 const svg = document.getElementById("routeSvg");
 const nodesLayer = document.getElementById("routeNodes");
 
+const titleCard = document.querySelector(".home-header");
+
+// Creates a watcher that checks if artworks are on screen
+const nodeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("out-of-view");
+    } else {
+      entry.target.classList.add("out-of-view");
+    }
+  });
+}, {
+  // -60px means they start blurring just before they hit the absolute edge of the screen
+  rootMargin: "-60px 0px -60px 0px", 
+  threshold: 0.1 
+});
+
+document.body.style.overflowX = "hidden";
 document.getElementById("artwork-count").textContent = ARTWORKS.length;
 
-// Decrease these numbers to bring the stops closer together. 
-// For example, changing 260/320 to 180/220:
 const SPACING = window.innerWidth < 720 ? 180 : 220;
-const TOP_PAD = window.innerWidth < 720 ? 340 : 220;
+// Change the mobile padding (the first number) to 480
+const TOP_PAD = window.innerWidth < 720 ? 400 : 220;
 const BOTTOM_PAD = 260;
-const AMPLITUDE = window.innerWidth < 720 ? 18 : 30; // how far stops swing left/right, in %
+const AMPLITUDE = window.innerWidth < 720 ? 18 : 30; 
 
 function computePoints() {
   const count = ARTWORKS.length;
@@ -24,8 +34,9 @@ function computePoints() {
 
   const points = ARTWORKS.map((_, i) => {
     const y = TOP_PAD + i * SPACING;
-    // Increase 1.05 to a number like 2.4 so the wave hits its peaks faster
-    const x = 50 + AMPLITUDE * Math.sin(i * 1.8);
+    const side = i % 2 === 0 ? 1 : -1; 
+    const organicVariation = 0.6 + (Math.abs(Math.sin(i * 1.3)) * 0.4); 
+    const x = 50 + (AMPLITUDE * side * organicVariation);
     return { x, y };
   });
 
@@ -61,6 +72,10 @@ function render() {
     <path class="route-path" d="${d}" fill="none" stroke="rgba(0, 0, 0, 0.12)" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round" />
   `;
   nodesLayer.innerHTML = "";
+  
+  // Clear the watcher before redrawing
+  nodeObserver.disconnect();
+
   ARTWORKS.forEach((art, i) => {
     const p = points[i];
     const thumb = art.photos && art.photos[0] ? art.photos[0] : "";
@@ -89,6 +104,8 @@ function render() {
     });
 
     nodesLayer.appendChild(node);
+    
+    nodeObserver.observe(node); 
   });
 }
 
@@ -98,6 +115,18 @@ function goToArtwork(id) {
   veil.classList.add("active");
   setTimeout(() => (window.location.href = url), 280);
 }
+
+// Watch the scroll position and apply the blur/fade class
+window.addEventListener("scroll", () => {
+  if (!titleCard) return; // Failsafe if the class name is wrong
+  
+  // 50px is the trigger point. Adjust this to make it fade earlier or later.
+  if (window.scrollY > 50) {
+    titleCard.classList.add("hidden-on-scroll");
+  } else {
+    titleCard.classList.remove("hidden-on-scroll");
+  }
+});
 
 render();
 window.addEventListener("resize", render);

@@ -45,6 +45,10 @@ html, body {
   font-family: var(--font-sans);
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100vw;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -174,6 +178,18 @@ a { color: inherit; text-decoration: none; }
   z-index: 50;
   max-width: 360px;
   padding: 28px;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), 
+              filter 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, filter, transform;
+}
+
+/* The state it transforms into when you scroll */
+.home-header.hidden-on-scroll {
+  opacity: 0;
+  filter: blur(16px);
+  transform: translateY(-30px) scale(0.95);
+  pointer-events: none; /* Prevents invisible buttons from being clicked */
 }
 
 .home-header .eyebrow-free {
@@ -227,7 +243,19 @@ a { color: inherit; text-decoration: none; }
   height: 130px; 
   cursor: pointer;
   transform: translate(-50%, -50%);
-  transition: transform 0.4s var(--ease-curated);
+  /* UPDATED: Added opacity and filter to the transition for the Apple effect */
+  transition: transform 0.4s var(--ease-curated),
+              opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), 
+              filter 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity, filter;
+}
+
+/* NEW: The state the cards transform into when they leave the screen */
+.route-node.out-of-view {
+  opacity: 0;
+  filter: blur(16px);
+  transform: translate(-50%, -50%) scale(0.85); /* Slightly shrinks as it blurs */
+  pointer-events: none;
 }
 
 /* Larger size for tablets and desktops */
@@ -468,11 +496,13 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.12em;
   color: var(--ink-muted);
   margin-bottom: 48px;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, color;
 }
 
 .back-link:hover {
   color: var(--accent-rust);
+  transform: translateX(-6px); 
 }
 
 .detail-type {
@@ -571,6 +601,76 @@ a { color: inherit; text-decoration: none; }
 .veil.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.detail-section {
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
+              filter 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, filter, transform;
+}
+
+.detail-section.text-blurred {
+  opacity: 0;
+  filter: blur(12px);
+  transform: translateY(25px);
+}
+
+/* Optional: smooth page load fade-in */
+.fade-in-on-load {
+  animation: softEntry 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes softEntry {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sleek Scroll Indicator */
+.scroll-hint {
+  position: fixed;
+  bottom: 40px;
+  right: 64px; /* Aligns nicely with the right column */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: gentleBounce 2.5s infinite;
+}
+
+.scroll-hint.hidden {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@media (max-width: 960px) {
+  .scroll-hint {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .scroll-hint.hidden {
+    transform: translate(50%, 15px);
+  }
+  @keyframes gentleBounce {
+    0%, 100% { transform: translate(50%, 0); }
+    50% { transform: translate(50%, 6px); }
+  }
 }
 
 /* Add this to the bottom of style.css */
