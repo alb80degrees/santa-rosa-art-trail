@@ -24,6 +24,14 @@
  *   photos      - array of 3-5 image paths. Put your images in
  *                 assets/artworks/<id>/ and list them here in the order
  *                 you want them to appear.
+ *   photoAlt    - OPTIONAL array, same length/order as photos. A short
+ *                 (under ~125 char) description of what's actually in each
+ *                 photo, for screen reader users and anyone whose image
+ *                 didn't load. If you skip this field entirely, the site
+ *                 falls back to "<title>, <type> by <artist> — photo N of
+ *                 total", which is fine but generic. Worth adding real ones
+ *                 when you have time — you've usually already written the
+ *                 visual details in `description`, so it's mostly copy work.
  *   contributor - your name, so we know who to credit / ask questions to
  *
  * IMPORTANT: the homepage route is generated automatically from the ORDER

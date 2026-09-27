@@ -21,10 +21,13 @@ root.innerHTML = `
         <div class="gallery__viewport">
           <div class="gallery__track" id="track">
             ${photos
-              .map(
-                (src) =>
-                  `<div class="gallery__slide" style="background-image:url('${src}')"></div>`
-              )
+              .map((src, i) => {
+                const alt =
+                  art.photoAlt && art.photoAlt[i]
+                    ? art.photoAlt[i]
+                    : `${art.title}, ${art.type} by ${art.artist} — photo ${i + 1} of ${photos.length}`;
+                return `<img class="gallery__slide" src="${src}" alt="${alt.replace(/"/g, "&quot;")}" loading="${i === 0 ? "eager" : "lazy"}">`;
+              })
               .join("")}
           </div>
           ${

@@ -306,9 +306,12 @@ a { color: inherit; text-decoration: none; }
 .route-node__thumb {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   background-color: #FFFFFF;
-  background-size: cover;
-  background-position: center;
   padding: 5px;
   border-radius: 2px;
   box-shadow: 
@@ -476,16 +479,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .gallery__slide {
-  /* Force the image to fill the entire container, cropping the edges if necessary */
-  background-size: cover; 
-  background-position: center;
-  
-  /* Keep your existing properties */
+  display: block;
+  object-fit: cover;
+  object-position: center;
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
   background-color: var(--bg-subtle);
-  background-repeat: no-repeat;
 }
 
 .gallery__track {

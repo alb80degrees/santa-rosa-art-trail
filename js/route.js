@@ -68,6 +68,8 @@ function render() {
   svg.setAttribute("height", height);
 
   const d = buildPathD(points, widthPx);
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("focusable", "false");
   svg.innerHTML = `
     <path class="route-path" d="${d}" fill="none" stroke="rgba(0, 0, 0, 0.12)" stroke-width="2" stroke-dasharray="2 14" stroke-linecap="round" />
   `;
@@ -89,10 +91,16 @@ function render() {
     node.setAttribute("aria-label", `Stop ${i + 1}: ${art.title}`);
 
     node.innerHTML = `
-      <div class="route-node__ring"></div>
-      <div class="route-node__thumb" style="background-image:url('${thumb}')"></div>
-      <div class="route-node__badge">${i + 1}</div>
-      <div class="route-node__label">${art.title}</div>
+      <div class="route-node__ring" aria-hidden="true"></div>
+      <img
+        class="route-node__thumb"
+        src="${thumb}"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+      >
+      <div class="route-node__badge" aria-hidden="true">${i + 1}</div>
+      <div class="route-node__label" aria-hidden="true">${art.title}</div>
     `;
 
     node.addEventListener("click", () => goToArtwork(art.id));

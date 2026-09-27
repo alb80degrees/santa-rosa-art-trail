@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Santa Rosa Art Trail</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets\icon\favicon.png">
+<link rel="icon" type="image/png" href="assets/icon/favicon.png">
 </head>
 <body>
 
-<div class="liquid-bg">
+<div class="liquid-bg" aria-hidden="true">
   <span></span>
   <span></span>
   <span></span>
@@ -17,7 +17,7 @@
 
 <header class="home-header glass">
   <div class="header-top-row">
-    <img src="assets/icon/favicon.png" alt="Santa Rosa Art" class="header-icon">
+    <img src="assets/icon/favicon.png" alt="" class="header-icon">
     <p class="eyebrow-free">A blogsite for Art Appreciation</p>
   </div>
   <h1>Santa Rosa Museum Art Trail</h1>
@@ -29,7 +29,7 @@
 </div>
 
 <main class="route-wrap">
-  <svg class="route-svg" id="routeSvg" preserveAspectRatio="none"></svg>
+  <svg class="route-svg" id="routeSvg" preserveAspectRatio="none" aria-hidden="true" focusable="false"></svg>
   <div class="route-nodes" id="routeNodes"></div>
 </main>
 
