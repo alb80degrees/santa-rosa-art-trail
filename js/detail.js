@@ -183,4 +183,15 @@ if (!art) {
       setTimeout(() => (window.location.href = backLink.href), 280); 
     });
   }
+
+  // --- NEW: Fix blank screen on browser back/swipe gesture ---
+  window.addEventListener("pageshow", (event) => {
+    // event.persisted is true if the page was loaded from the browser cache
+    if (event.persisted) {
+      const veil = document.getElementById("veil");
+      if (veil) {
+        veil.classList.remove("active");
+      }
+    }
+  });
 }
