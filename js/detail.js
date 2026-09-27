@@ -15,35 +15,46 @@ if (!art) {
   const photos = art.photos && art.photos.length ? art.photos : [];
 
   // Added the 'fade-in-on-load' class to both columns for a smooth entrance
-  root.innerHTML = `
+root.innerHTML = `
     <div class="gallery-col fade-in-on-load">
       <div class="gallery">
-        <div class="gallery__track" id="track">
-          ${photos
-            .map(
-              (src) =>
-                `<div class="gallery__slide" style="background-image:url('${src}')"></div>`
-            )
-            .join("")}
+        <div class="gallery__viewport">
+          <div class="gallery__track" id="track">
+            ${photos
+              .map(
+                (src) =>
+                  `<div class="gallery__slide" style="background-image:url('${src}')"></div>`
+              )
+              .join("")}
+          </div>
+          ${
+            photos.length > 1
+              ? `
+          <button class="gallery__zone gallery__zone--prev" id="zonePrev" aria-label="Previous photo"></button>
+          <button class="gallery__zone gallery__zone--next" id="zoneNext" aria-label="Next photo"></button>`
+              : ""
+          }
         </div>
+        
         ${
           photos.length > 1
             ? `
+        <div class="gallery__nav-bar">
           <button class="gallery__arrow gallery__arrow--prev glass" id="prevBtn" aria-label="Previous photo">&larr;</button>
-          <button class="gallery__arrow gallery__arrow--next glass" id="nextBtn" aria-label="Next photo">&rarr;</button>
-          <div class="gallery__controls glass">
+          <div class="gallery__controls">
             ${photos
               .map(
                 (_, i) =>
                   `<button class="gallery__dot ${i === 0 ? "active" : ""}" data-index="${i}" aria-label="Go to photo ${i + 1}"></button>`
               )
               .join("")}
-          </div>`
+          </div>
+          <button class="gallery__arrow gallery__arrow--next glass" id="nextBtn" aria-label="Next photo">&rarr;</button>
+        </div>`
             : ""
         }
       </div>
     </div>
-
     <div class="content-col fade-in-on-load" style="animation-delay: 0.1s;">
       <a class="back-link" href="index.html">&larr; Back to the map</a>
 
@@ -147,6 +158,23 @@ if (!art) {
       })
     );
 
+    // --- NEW: Click zones on the photo itself (left half = prev, right half = next) ---
+    const zonePrev = document.getElementById("zonePrev");
+    const zoneNext = document.getElementById("zoneNext");
+
+    if (zonePrev) {
+      zonePrev.addEventListener("click", () => {
+        index = (index - 1 + photos.length) % photos.length;
+        renderGallery();
+      });
+    }
+    if (zoneNext) {
+      zoneNext.addEventListener("click", () => {
+        index = (index + 1) % photos.length;
+        renderGallery();
+      });
+    }
+
     // --- NEW: Keyboard Navigation for Gallery ---
     document.addEventListener("keydown", (e) => {
       if (e.key === "ArrowLeft") {
@@ -185,13 +213,13 @@ if (!art) {
   }
 
   // --- NEW: Fix blank screen on browser back/swipe gesture ---
-  window.addEventListener("pageshow", (event) => {
-    // event.persisted is true if the page was loaded from the browser cache
-    if (event.persisted) {
-      const veil = document.getElementById("veil");
-      if (veil) {
-        veil.classList.remove("active");
-      }
+window.addEventListener("pageshow", (event) => {
+  // event.persisted is true if the page was loaded from the browser cache
+  if (event.persisted) {
+    const veil = document.getElementById("veil");
+    if (veil) {
+      veil.classList.remove("active");
     }
-  });
+  }
+});
 }

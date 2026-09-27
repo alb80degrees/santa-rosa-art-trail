@@ -139,5 +139,33 @@ window.addEventListener("scroll", () => {
     }
   });
   
+  // Grab the counter element (add this near where you defined titleCard)
+const homeCounter = document.querySelector(".home-counter");
+
+// Add this variable outside the listener to keep track of the timer
+let scrollTimeout;
+
+window.addEventListener("scroll", () => {
+  // 1. Instantly hide elements when moving past 50px
+  if (window.scrollY > 50) {
+    if (titleCard) titleCard.classList.add("hidden-on-scroll");
+    if (homeCounter) homeCounter.classList.add("hidden-on-scroll");
+  } else {
+    // Bring both back immediately if they scroll all the way to the top
+    if (titleCard) titleCard.classList.remove("hidden-on-scroll");
+    if (homeCounter) homeCounter.classList.remove("hidden-on-scroll");
+  }
+
+  // 2. Clear the timer while the user is actively scrolling
+  clearTimeout(scrollTimeout);
+
+  // 3. Start a new timer. If 250ms pass with no scrolling, bring the counter back
+  scrollTimeout = setTimeout(() => {
+    if (window.scrollY > 50 && homeCounter) {
+      homeCounter.classList.remove("hidden-on-scroll");
+    }
+  }, 250); 
+});
+
 render();
 window.addEventListener("resize", render);
