@@ -26,8 +26,8 @@ const nodeObserver = new IntersectionObserver((entries) => {
   });
 }, {
   // -60px means they start blurring just before they hit the absolute edge of the screen
-  rootMargin: "-60px 0px -60px 0px", 
-  threshold: 0.1 
+  rootMargin: "-20px 0px -20px 0px", 
+  threshold: 0.1
 });
 
 document.body.style.overflowX = "hidden";
