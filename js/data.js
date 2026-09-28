@@ -219,5 +219,52 @@ const ARTWORKS = [
   "assets/artworks/tinutolaing/4.JPG",
   ],
     contributor: "Earl Laurence J. Lucero"
-  }
+  },
+
+
+{
+  "id": "battle-of-the-nuts",
+  "title": "Battle of the Nuts", 
+  "artist": "Ram Mallari", 
+  "type": "Mixed Media", 
+  "locationName": "Life 'n Arts Gallery", 
+  "year": "Unknown",
+  "description": "This 25 by 22 by 22-inch mixed media artwork is an intricate steampunk-style chess table installation. Enclosed under an etched acrylic protective case, the checkered board is made from black and tan leather tiles. The opposing chess armies are sculpted entirely from industrial metal hardware, such as hex nuts, bolts, washers, threaded rods, and spark plugs. One side has a dark metallic silver finish, while the other has a warm copper tone. The table structure features industrial rivets, pipes, and exposed gears, and is flanked by two matching leather-topped stools.",
+  "analysis": "Ram Mallari uses his steampunk style by turning common industrial materials into a chess set and table. The different metallic colors help separate the two sides of the chess army. Materials such as nuts, bolts, washers, and spark plugs are arranged to form recognizable chess pieces. The repeated use of these metal parts gives the artwork a consistent industrial appearance. The leather tiles also add a different texture to the metal materials. The title, Battle of the Nuts, connects directly to the nuts used throughout the artwork.",
+  "interpretation": "The artwork can be interpreted as a comment on war and power struggles. In my own opinion, The chess pieces represent people or leaders involved in a conflict, while the use of nuts, bolts, and other machine parts makes them look like pieces of a larger machine. This can suggest that those involved in conflicts may only be small parts of something much bigger. The title Battle of the Nuts also adds humor because it refers to the actual nuts used in the artwork while making the idea of a serious battle seem somewhat absurd.",
+  "judgement": "I think this is a creative and interesting piece of functional art. The use of ordinary scrap materials to create a detailed chess set makes the artwork unique. The combination of the metal pieces, leather board, gears, and industrial design also makes it visually interesting. Another good part of the artwork is that it is not only meant to be displayed but can also be used as a chess table. Overall, the artwork shows creativity and careful craftsmanship in turning recycled materials into something useful and meaningful.",
+  "sources": [
+    "Life 'n Arts Gallery, Santa Rosa, Laguna" 
+  ],
+  "photos": [
+    "assets/artworks/battleofthenuts/IMG1.jpg",
+    "assets/artworks/battleofthenuts/IMG2.jpg",
+    "assets/artworks/battleofthenuts/IMG3.jpg",
+    "assets/artworks/battleofthenuts/IMG4.jpg"
+  ],
+  contributor: "Neil Ashley L. Apolinar"
+},
+
+{
+  "id": "can-i-take-your-order-please",
+  "title": "Can I Take Your Order Please?", 
+  "artist": "Buhay Mendoza", 
+  "type": "Oil on Canvas", 
+  "locationName": "Life 'n Arts Gallery", 
+  "year": "2026",
+  "description": "This 24 by 18-inch oil painting features a surreal portrait of a figure wearing an orange and gray service uniform, set against a bright green landscape under a blue sky with fluffy white clouds. The figure's head is replaced by a retro cassette tape with cartoonish eyes looking out from the tape reels, supported by a metallic spring neck. Resting on top of the cassette head is a fast-food burger topped with a bright orange cherry.",
+  "analysis": "Buhay Mendoza uses surrealism and pop art elements by combining familiar objects in an unusual way. The bright blue sky, green landscape, and orange uniform create a colorful and noticeable appearance. The figure is placed in the center, making it the main focus of the painting. The cassette tape, spring neck, and burger create a strange combination that stands out from the natural background. The use of everyday objects also gives the artwork a playful and unusual appearance.",
+  "interpretation": "For me, the artwork can be seen as a playful comment on consumer culture and repetitive daily routines. The cassette tape makes me think of repetition because it is used to play recorded sounds over and over. With the service uniform, I see it as a possible representation of how workers can repeat the same tasks or lines during their daily work. The burger on top also adds humor while connecting the artwork to fast-food and consumer culture. The strange combination of objects makes the message more interesting instead of making it feel too serious.",
+  "judgement": "I think this is a fun and creative piece of art because of how it combines ordinary objects in a strange way. The colorful background and unusual character immediately make the painting interesting to look at. I also like how the artwork uses humor while still having a possible message about work and consumer habits. For me, the combination of the cassette, spring, and burger makes the artwork memorable and gives it its own unique style.",
+  "sources": [
+    "Life 'n Arts Gallery, Santa Rosa, Laguna",
+    "https://www.artworkarchive.com/profile/lifenarts-galleryofficial/artwork/can-i-take-your-order-please?artist=buhay-mendoza"
+  ],
+  "photos": [
+    "assets/artworks/canitakeyourorderplease/IMG200.jpg"
+  ],
+  contributor: "Neil Ashley L. Apolinar"
+}
+
+
 ];
