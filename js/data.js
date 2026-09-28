@@ -237,10 +237,10 @@ const ARTWORKS = [
     "Life 'n Arts Gallery, Santa Rosa, Laguna" 
   ],
   "photos": [
-    "assets/artworks/battleofthenuts/IMG2.JPG",
+    "assets/artworks/battleofthenuts/IMG4.JPG",
     "assets/artworks/battleofthenuts/IMG1.JPG",
-    "assets/artworks/battleofthenuts/IMG3.JPG",
-    "assets/artworks/battleofthenuts/IMG4.JPG"
+    "assets/artworks/battleofthenuts/IMG2.JPG",
+    "assets/artworks/battleofthenuts/IMG3.JPG"
   ],
   contributor: "Neil Ashley L. Apolinar"
 },

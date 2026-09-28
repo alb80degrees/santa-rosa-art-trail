@@ -15,17 +15,23 @@ if (!art) {
   const photos = art.photos && art.photos.length ? art.photos : [];
 
   // Added the 'fade-in-on-load' class to both columns for a smooth entrance
-root.innerHTML = `
+  root.innerHTML = `
     <div class="gallery-col fade-in-on-load">
       <div class="gallery">
         <div class="gallery__viewport">
+          
+          <!-- NEW: The Enlarge Button -->
+          <button class="gallery__enlarge glass" id="enlargeBtn" aria-label="View full screen">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </button>
+
           <div class="gallery__track" id="track">
             ${photos
               .map((src, i) => {
                 const alt =
                   art.photoAlt && art.photoAlt[i]
                     ? art.photoAlt[i]
-                    : `${art.title}, ${art.type} by ${art.artist} — photo ${i + 1} of ${photos.length}`;
+                    : `${art.title}, ${art.type} by${art.artist} — photo ${i + 1} of${photos.length}`;
                 return `<img class="gallery__slide" src="${src}" alt="${alt.replace(/"/g, "&quot;")}" loading="${i === 0 ? "eager" : "lazy"}">`;
               })
               .join("")}
@@ -99,14 +105,24 @@ root.innerHTML = `
 
       <p class="contributor-tag">Documented by ${art.contributor}</p>
     </div>
-    <!-- ADD THIS RIGHT BEFORE THE BACKTICK CLOSING root.innerHTML -->
+    
     <div class="scroll-hint" id="scrollHint">Scroll for more &darr;</div>
-  `; // <-- Your existing backtick is here
+  `; 
 
-  // --- NEW: Hide the scroll hint when the user starts scrolling ---
+  // --- NEW: Inject the Lightbox Modal ---
+  if (!document.getElementById("lightboxModal")) {
+    const lightboxHTML = `
+      <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-modal__close" id="lightboxClose" aria-label="Close fullscreen">&times;</button>
+        <img class="lightbox-modal__img" id="lightboxImg" src="" alt="Enlarged artwork">
+      </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+  }
+
+  // --- Hide the scroll hint when the user starts scrolling ---
   const scrollHint = document.getElementById("scrollHint");
   
-  // Changed to listen to the whole browser window instead of just the column
   window.addEventListener("scroll", () => {
     if (window.scrollY > 20) {
       scrollHint.classList.add("hidden");
@@ -115,7 +131,7 @@ root.innerHTML = `
     }
   });
 
-  // --- NEW: Smooth Scroll Observer for Text Sections ---
+  // --- Smooth Scroll Observer for Text Sections ---
   const textObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -123,19 +139,19 @@ root.innerHTML = `
       }
     });
   }, {
-    // Triggers slightly before the text hits the absolute bottom of the screen
     rootMargin: "0px 0px -10% 0px", 
     threshold: 0.1
   });
 
-  // Watch every detail section we just injected
   document.querySelectorAll(".detail-section").forEach(section => {
     textObserver.observe(section);
   });
 
-  // --- ORIGINAL: Gallery interactivity ---
+  // --- Shared Index Variable (Used by both Gallery and Lightbox) ---
+  let index = 0; 
+  
+  // --- Gallery interactivity ---
   if (photos.length > 1) {
-    let index = 0;
     const track = document.getElementById("track");
     const dots = [...document.querySelectorAll(".gallery__dot")];
 
@@ -144,15 +160,22 @@ root.innerHTML = `
       dots.forEach((d, i) => d.classList.toggle("active", i === index));
     }
 
-    document.getElementById("prevBtn").addEventListener("click", () => {
-      index = (index - 1 + photos.length) % photos.length;
-      renderGallery();
-    });
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + photos.length) % photos.length;
+        renderGallery();
+      });
+    }
     
-    document.getElementById("nextBtn").addEventListener("click", () => {
-      index = (index + 1) % photos.length;
-      renderGallery();
-    });
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % photos.length;
+        renderGallery();
+      });
+    }
     
     dots.forEach((dot) =>
       dot.addEventListener("click", () => {
@@ -161,7 +184,7 @@ root.innerHTML = `
       })
     );
 
-    // --- NEW: Click zones on the photo itself (left half = prev, right half = next) ---
+    // --- Click zones on the photo itself (left half = prev, right half = next) ---
     const zonePrev = document.getElementById("zonePrev");
     const zoneNext = document.getElementById("zoneNext");
 
@@ -178,8 +201,11 @@ root.innerHTML = `
       });
     }
 
-    // --- NEW: Keyboard Navigation for Gallery ---
+    // --- Keyboard Navigation for Gallery ---
     document.addEventListener("keydown", (e) => {
+      // Don't slide the gallery if the lightbox is currently open
+      if (document.getElementById("lightboxModal").classList.contains("active")) return;
+      
       if (e.key === "ArrowLeft") {
         index = (index - 1 + photos.length) % photos.length;
         renderGallery();
@@ -190,13 +216,42 @@ root.innerHTML = `
     });
   }
 
-  // --- NEW: Smooth Page Transition for Back Link ---
+  // --- NEW: Lightbox Modal Logic ---
+  const enlargeBtn = document.getElementById("enlargeBtn");
+  const lightboxModal = document.getElementById("lightboxModal");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  if (enlargeBtn && lightboxModal && lightboxImg) {
+    enlargeBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); 
+      // Grab the source of the currently active photo based on the index
+      lightboxImg.src = photos[index]; 
+      lightboxModal.classList.add("active");
+    });
+  }
+
+  if (lightboxModal && lightboxClose) {
+    // Close on X click
+    lightboxClose.addEventListener("click", () => lightboxModal.classList.remove("active"));
+    
+    // Close when clicking the blurred background
+    lightboxModal.addEventListener("click", (e) => {
+      if (e.target === lightboxModal) lightboxModal.classList.remove("active");
+    });
+    
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") lightboxModal.classList.remove("active");
+    });
+  }
+
+  // --- Smooth Page Transition for Back Link ---
   const backLink = document.querySelector(".back-link");
   if (backLink) {
     backLink.addEventListener("click", (e) => {
-      e.preventDefault(); // Stop the instant jump
+      e.preventDefault();
       
-      // Look for the veil, or create it if it doesn't exist on this page
       let veil = document.getElementById("veil");
       if (!veil) {
         veil = document.createElement("div");
@@ -205,24 +260,21 @@ root.innerHTML = `
         document.body.appendChild(veil);
       }
       
-      // Small delay to ensure the browser registers the new element before animating
       requestAnimationFrame(() => {
         veil.classList.add("active");
       });
       
-      // Wait for the fade animation to finish before changing pages
       setTimeout(() => (window.location.href = backLink.href), 280); 
     });
   }
 
-  // --- NEW: Fix blank screen on browser back/swipe gesture ---
-window.addEventListener("pageshow", (event) => {
-  // event.persisted is true if the page was loaded from the browser cache
-  if (event.persisted) {
-    const veil = document.getElementById("veil");
-    if (veil) {
-      veil.classList.remove("active");
+  // --- Fix blank screen on browser back/swipe gesture ---
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      const veil = document.getElementById("veil");
+      if (veil) {
+        veil.classList.remove("active");
+      }
     }
-  }
-});
+  });
 }

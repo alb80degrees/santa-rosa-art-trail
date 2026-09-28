@@ -817,6 +817,96 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-muted);
 }
 
+/* --- ENLARGE BUTTON --- */
+.gallery__enlarge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--ink-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.gallery__enlarge:hover {
+  background: #FFFFFF;
+  transform: scale(1.08);
+}
+
+/* --- LIGHTBOX FULLSCREEN MODAL --- */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 4000; /* Must sit above everything, including the veil */
+  background: rgba(20, 19, 18, 0.85); /* Deep dark gallery background */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-modal__img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  
+  /* The smooth Apple-style zoom-in effect */
+  transform: scale(0.92) translateY(15px);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lightbox-modal.active .lightbox-modal__img {
+  transform: scale(1) translateY(0);
+}
+
+.lightbox-modal__close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: none;
+  border: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  z-index: 4010;
+}
+
+.lightbox-modal__close:hover {
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+@media (max-width: 720px) {
+  .lightbox-modal__close {
+    top: 16px;
+    right: 20px;
+  }
+}
+
 /* Page Transition Veil */
 .veil {
   position: fixed;
