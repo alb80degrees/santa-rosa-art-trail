@@ -4,6 +4,17 @@ const nodesLayer = document.getElementById("routeNodes");
 
 const titleCard = document.querySelector(".home-header");
 
+// --- Welcome Fade-In ---
+window.addEventListener("load", () => {
+  const veil = document.getElementById("veil");
+  if (veil) {
+    // Wait 1.5 seconds (1500ms) after the page loads, then gently fade out the veil
+    setTimeout(() => {
+      veil.classList.remove("active");
+    }, 1000);
+  }
+});
+
 // Creates a watcher that checks if artworks are on screen
 const nodeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -124,56 +135,63 @@ function goToArtwork(id) {
   setTimeout(() => (window.location.href = url), 280);
 }
 
-// Watch the scroll position and apply the blur/fade class
-window.addEventListener("scroll", () => {
-  if (!titleCard) return; // Failsafe if the class name is wrong
-  
-  // 50px is the trigger point. Adjust this to make it fade earlier or later.
-  if (window.scrollY > 50) {
-    titleCard.classList.add("hidden-on-scroll");
-  } else {
-    titleCard.classList.remove("hidden-on-scroll");
+// --- Fix blank screen on browser back/swipe gesture ---
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    const veil = document.getElementById("veil");
+    if (veil) {
+      veil.classList.remove("active");
+    }
   }
 });
 
-  // --- NEW: Fix blank screen on browser back/swipe gesture ---
-  window.addEventListener("pageshow", (event) => {
-    // event.persisted is true if the page was loaded from the browser cache
-    if (event.persisted) {
-      const veil = document.getElementById("veil");
-      if (veil) {
-        veil.classList.remove("active");
-      }
-    }
-  });
-  
-  // Grab the counter element (add this near where you defined titleCard)
+// --- Scroll Fade Logic (Unified) ---
 const homeCounter = document.querySelector(".home-counter");
-
-// Add this variable outside the listener to keep track of the timer
+const homeAbout = document.getElementById("aboutBtn"); 
 let scrollTimeout;
 
 window.addEventListener("scroll", () => {
-  // 1. Instantly hide elements when moving past 50px
   if (window.scrollY > 50) {
     if (titleCard) titleCard.classList.add("hidden-on-scroll");
     if (homeCounter) homeCounter.classList.add("hidden-on-scroll");
+    if (homeAbout) homeAbout.classList.add("hidden-on-scroll"); 
   } else {
-    // Bring both back immediately if they scroll all the way to the top
     if (titleCard) titleCard.classList.remove("hidden-on-scroll");
     if (homeCounter) homeCounter.classList.remove("hidden-on-scroll");
+    if (homeAbout) homeAbout.classList.remove("hidden-on-scroll"); 
   }
 
-  // 2. Clear the timer while the user is actively scrolling
   clearTimeout(scrollTimeout);
-
-  // 3. Start a new timer. If 250ms pass with no scrolling, bring the counter back
   scrollTimeout = setTimeout(() => {
-    if (window.scrollY > 50 && homeCounter) {
-      homeCounter.classList.remove("hidden-on-scroll");
+    if (window.scrollY > 50) {
+      if (homeCounter) homeCounter.classList.remove("hidden-on-scroll");
+      if (homeAbout) homeAbout.classList.remove("hidden-on-scroll"); 
     }
-  }, 250); 
+  }, 800); 
 });
+
+// --- About Modal Interaction Logic ---
+const aboutModal = document.getElementById("aboutModal");
+const closeModal = document.getElementById("closeModal");
+
+if (homeAbout && aboutModal && closeModal) {
+  // Open modal
+  homeAbout.addEventListener("click", () => {
+    aboutModal.classList.add("active");
+  });
+  
+  // Close modal via X button
+  closeModal.addEventListener("click", () => {
+    aboutModal.classList.remove("active");
+  });
+  
+  // Close modal by clicking the blurred background outside the card
+  aboutModal.addEventListener("click", (e) => {
+    if (e.target === aboutModal) {
+      aboutModal.classList.remove("active");
+    }
+  });
+}
 
 render();
 window.addEventListener("resize", render);

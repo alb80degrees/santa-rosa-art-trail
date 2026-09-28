@@ -2,6 +2,8 @@
 
 A blogsite documenting at least 10 artworks/artforms encountered in one walkthrough — presented as an interactive route you click into, rather than a scrolling list.
 
+Access the website here: https://alb80degrees.github.io/santa-rosa-art-trail/
+
 **Live idea:** the homepage is an abstract winding path down the page. Each artwork is a numbered stop along it, in the order the group actually encountered them. Clicking a stop takes you into a full write-up with photos, description, personal analysis, and sources.
 
 ## How it's built

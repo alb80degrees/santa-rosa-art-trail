@@ -28,12 +28,39 @@
   <span>Stops: <strong id="artwork-count">0</strong></span>
 </div>
 
+<!-- Add this near your home-counter -->
+<button class="home-about" id="aboutBtn">About</button>
+
+<!-- Add this at the very bottom of the body -->
+<div class="about-modal" id="aboutModal">
+  <div class="about-modal__content glass">
+    <button class="about-modal__close" id="closeModal" aria-label="Close modal">&times;</button>
+    <h2>Santa Rosa Art Trail</h2>
+    <p>A collaborative documentation of local art and exhibitions.</p>
+    
+    <div class="about-modal__members">
+      <h3>Contributors</h3>
+      <ul>
+        <li>Apolinar, Neil Ashley L.</li>
+        <li>Calambro, Alvin Jan L.</li>
+        <li>Lucero, Earl Laurence J.</li>
+        <li>Ramos, Darrel Jed R.</li>
+        <li>Trinidad, Revo Ivan E.</li>
+      </ul>
+    </div>
+    
+    <a href="https://github.com/alb80degrees/santa-rosa-art-trail" target="_blank" class="github-link">
+      View GitHub Repository &rarr;
+    </a>
+  </div>
+</div>
+
 <main class="route-wrap">
   <svg class="route-svg" id="routeSvg" preserveAspectRatio="none" aria-hidden="true" focusable="false"></svg>
   <div class="route-nodes" id="routeNodes"></div>
 </main>
 
-<div class="veil" id="veil"></div>
+<div class="veil active" id="veil"></div>
 
 <script src="js/data.js"></script>
 <script src="js/route.js"></script>
