@@ -190,12 +190,12 @@ const ARTWORKS = [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
-  "assets/artworks/tumbapreso/1.jpg",
-  "assets/artworks/tumbapreso/2.jpg",
-  "assets/artworks/tumbapreso/3.jpg",
-  "assets/artworks/tumbapreso/4.jpg",
-  "assets/artworks/tumbapreso/5.jpg",
-    ],
+  "assets/artworks/tumbapreso/1.JPG",
+  "assets/artworks/tumbapreso/2.JPG",
+  "assets/artworks/tumbapreso/3.JPG",
+  "assets/artworks/tumbapreso/4.JPG",
+  "assets/artworks/tumbapreso/5.JPG",
+  ],
     contributor: "Earl Laurence J. Lucero"
   },
   {
@@ -213,11 +213,11 @@ const ARTWORKS = [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
-  "assets/artworks/tinutolaing/1.jpg",
-  "assets/artworks/tinutolaing/2.jpg",
-  "assets/artworks/tinutolaing/3.jpg",
-  "assets/artworks/tinutolaing/4.jpg",
-    ],
+  "assets/artworks/tinutolaing/1.JPG",
+  "assets/artworks/tinutolaing/2.JPG",
+  "assets/artworks/tinutolaing/3.JPG",
+  "assets/artworks/tinutolaing/4.JPG",
+  ],
     contributor: "Earl Laurence J. Lucero"
   }
 ];
