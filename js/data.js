@@ -182,20 +182,20 @@ const ARTWORKS = [
     type: "Mixed Media",
     locationName: "Life 'n Arts Gallery",
     year: "Unknown",
-    description: "Measuring 11 by 24 by 10.5 inches, this mixed-media diorama sculpture depicts a lively scene of Filipino children playing the traditional street game tumbang preso. Housed in a clear protective display case on a dark wooden base, the composition features six sculpted young boys dressed in casual shorts and colorful shirts. On the left side, four boys prepare and watch with eager postures; in the center, a boy balances dynamically on one leg after having hurled his slipper; on the right, the designated 'it' (taya) lunges forward with an outstretched arm to tag him, while another boy crouches near the fallen can and scattered slippers.",
-    analysis: "Bañez creates a strong sense of freeze-frame kinetic energy through dynamic postures, diagonal lines, and asymmetric grouping. The figures are placed along a horizontal stage, guiding the viewer's eye from the anticipation on the left to the climactic confrontation in the center and right. Contrast is achieved through the varied painted hues of the boys' shirts (blue, orange, red, and yellow) against their warm, earthy skin tones and the muted base. The realistic anatomical tension in the limbs—from bent knees to outstretched arms—lends authenticity and balance to the suspended action.",
-    interpretation: "The artwork celebrates Filipino childhood camaraderie, communal street games (Laro ng Lahi), and uninhibited outdoor recreation. By capturing a split-second turning point in tumbang preso, the piece evokes deep nostalgia for a pre-digital era where neighborhood streets served as playgrounds. It speaks to cultural identity, spontaneous teamwork, and the joy of shared cultural traditions passed down across generations.",
-    judgement: "This sculpture is exceptionally well-crafted, succeeding through expressive character modeling and convincing physical gestures. The artist captures the chaotic yet coordinated spirit of the game with great warmth and narrative clarity, making it an engaging and culturally resonant highlight of the gallery.",
+    description: "This mixed media diorama is about 11 by 24 by 10.5 inches. It shows a really lively scene of Filipino kids playing the classic street game tumbang preso. It is kept inside a clear display case on a dark wooden base. There are six sculpted boys wearing casual shorts and colorful shirts. On the left, four boys are getting ready or watching eagerly. In the middle, one boy is balancing on one leg right after throwing his slipper. On the right, the 'it' or taya is lunging forward to tag him, while another boy crouches near the knocked over can and scattered slippers.",
+    analysis: "The artist does a great job of making the scene look like it is frozen in time. The boys are in dynamic poses with diagonal lines that make the action feel real. They are lined up across the base, which guides your eyes from the kids waiting on the left to the main action in the center and right. The bright colors of their shirts like blue, orange, red, and yellow stand out nicely against their skin tones and the plain wooden base. The realistic details in their bent knees and reaching arms make the whole scene feel balanced and authentic.",
+    interpretation: "This artwork really celebrates Filipino childhood and our traditional street games. It brings back a lot of nostalgia for a time before digital gadgets, when the neighborhood streets were our main playgrounds. It shows cultural identity and the simple joy of playing together, which is a tradition passed down through generations.",
+    judgement: "I think this sculpture is exceptionally well made. The artist captured the chaotic but coordinated spirit of the game with a lot of warmth. The expressive poses and clear storytelling make it a really engaging and culturally meaningful highlight of the gallery.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
-  "assets/artworks/tumbapreso/1.JPG",
-  "assets/artworks/tumbapreso/2.JPG",
-  "assets/artworks/tumbapreso/3.JPG",
-  "assets/artworks/tumbapreso/4.JPG",
-  "assets/artworks/tumbapreso/5.JPG",
-  ],
+      "assets/artworks/tumbapreso/1.JPG",
+      "assets/artworks/tumbapreso/2.JPG",
+      "assets/artworks/tumbapreso/3.JPG",
+      "assets/artworks/tumbapreso/4.JPG",
+      "assets/artworks/tumbapreso/5.JPG"
+    ],
     contributor: "Earl Laurence J. Lucero"
   },
   {
@@ -205,68 +205,63 @@ const ARTWORKS = [
     type: "Oil on canvas",
     locationName: "Life 'n Arts Gallery",
     year: "2024",
-    description: "Measuring 24 by 18 inches, this vertical oil on canvas painting portrays a young Filipino girl standing in an open field against rolling green hills and a lavender-tinted sky. She wears a traditional light-colored baro't saya blouse, a yellow patterned skirt, and pink water lily blossoms pinned in her dark hair. Cupped gently in both hands is a fresh green banana leaf holding tinutó (laing), while a small, bright yellow-and-brown sparrow with open wings perches close beside her neck and shoulder. The piece is signed and dated 'Buhay '24' near the bottom right.",
-    analysis: "Mendoza utilizes a harmonious, warm-to-cool palette dominated by golden ochres, vibrant leafy greens, and soft violet-blue skies. The composition centers on the girl's stylized, expressive facial features, with soft lighting illuminating her rounded cheeks and shoulders. Strong contrast is created between the saturated, rich green folds of the banana leaf and the dark, textured laing resting within it. Curved lines in the girl's arms, the outstretched wings of the sparrow, and the contour of the hills in the background create a calm, flowing visual rhythm.",
-    interpretation: "The painting conveys themes of rural abundance, cultural sustenance, and harmony between humankind and nature. Tinutó (taro leaves cooked in coconut milk) symbolizes regional culinary heritage and simple local nourishment. Accompanied by the sparrow and natural floral adornments, the gentle expression of the girl reflects pure innocence, hospitality, and an intimate connection to the land and provincial life.",
-    judgement: "Mendoza delivers a charming, illustrative portrait that combines folk sentimentality with precise figurative skill. The juxtaposition of fine culinary and floral details with whimsical character proportions gives the work warmth and appeal, effectively communicating an enduring pride in Filipino agrarian tradition.",
+    description: "This vertical oil painting is 24 by 18 inches. It shows a young Filipino girl standing in an open field with rolling green hills and a soft lavender sky in the background. She is wearing a traditional light colored baro't saya blouse, a yellow patterned skirt, and has pink water lily flowers in her dark hair. She is gently holding a fresh green banana leaf filled with tinutó or laing in both hands. A small yellow and brown sparrow with its wings open is perched right next to her neck and shoulder. The artist signed it 'Buhay '24' at the bottom right.",
+    analysis: "Mendoza uses a really nice mix of warm and cool colors here. The golden yellows, vibrant greens, and soft violet blue sky blend together perfectly. The composition focuses on the girl's expressive face, with soft lighting highlighting her cheeks and shoulders. There is a strong contrast between the bright green banana leaf and the dark, textured laing inside it. The curved lines of her arms, the bird's wings, and the hills in the background create a calm and flowing visual rhythm.",
+    interpretation: "The painting shows themes of rural life, local food, and harmony with nature. Tinutó, which is taro leaves cooked in coconut milk, represents our regional culinary heritage and simple local nourishment. With the sparrow and the flowers in her hair, the girl's gentle expression reflects innocence, hospitality, and a deep connection to the land and provincial life.",
+    judgement: "Mendoza created a charming and detailed portrait that mixes folk sentiment with great painting skills. The mix of fine details like the food and flowers with the slightly stylized character proportions gives the work a lot of warmth. It effectively communicates a lasting pride in Filipino agrarian tradition.",
     sources: [
       "Life 'n Arts Gallery, Santa Rosa, Laguna"
     ],
     photos: [
-  "assets/artworks/tinutolaing/1.JPG",
-  "assets/artworks/tinutolaing/2.JPG",
-  "assets/artworks/tinutolaing/3.JPG",
-  "assets/artworks/tinutolaing/4.JPG",
-  ],
+      "assets/artworks/tinutolaing/1.JPG",
+      "assets/artworks/tinutolaing/2.JPG",
+      "assets/artworks/tinutolaing/3.JPG",
+      "assets/artworks/tinutolaing/4.JPG"
+    ],
     contributor: "Earl Laurence J. Lucero"
   },
-
-
-{
-  "id": "battle-of-the-nuts",
-  "title": "Battle of the Nuts", 
-  "artist": "Ram Mallari", 
-  "type": "Mixed Media", 
-  "locationName": "Life 'n Arts Gallery", 
-  "year": "Unknown",
-  "description": "This 25 by 22 by 22-inch mixed media artwork is an intricate steampunk-style chess table installation. Enclosed under an etched acrylic protective case, the checkered board is made from black and tan leather tiles. The opposing chess armies are sculpted entirely from industrial metal hardware, such as hex nuts, bolts, washers, threaded rods, and spark plugs. One side has a dark metallic silver finish, while the other has a warm copper tone. The table structure features industrial rivets, pipes, and exposed gears, and is flanked by two matching leather-topped stools.",
-  "analysis": "Ram Mallari uses his steampunk style by turning common industrial materials into a chess set and table. The different metallic colors help separate the two sides of the chess army. Materials such as nuts, bolts, washers, and spark plugs are arranged to form recognizable chess pieces. The repeated use of these metal parts gives the artwork a consistent industrial appearance. The leather tiles also add a different texture to the metal materials. The title, Battle of the Nuts, connects directly to the nuts used throughout the artwork.",
-  "interpretation": "The artwork can be interpreted as a comment on war and power struggles. In my own opinion, The chess pieces represent people or leaders involved in a conflict, while the use of nuts, bolts, and other machine parts makes them look like pieces of a larger machine. This can suggest that those involved in conflicts may only be small parts of something much bigger. The title Battle of the Nuts also adds humor because it refers to the actual nuts used in the artwork while making the idea of a serious battle seem somewhat absurd.",
-  "judgement": "I think this is a creative and interesting piece of functional art. The use of ordinary scrap materials to create a detailed chess set makes the artwork unique. The combination of the metal pieces, leather board, gears, and industrial design also makes it visually interesting. Another good part of the artwork is that it is not only meant to be displayed but can also be used as a chess table. Overall, the artwork shows creativity and careful craftsmanship in turning recycled materials into something useful and meaningful.",
-  "sources": [
-    "Life 'n Arts Gallery, Santa Rosa, Laguna" 
-  ],
-  "photos": [
-    "assets/artworks/battleofthenuts/IMG4.JPG",
-    "assets/artworks/battleofthenuts/IMG1.JPG",
-    "assets/artworks/battleofthenuts/IMG2.JPG",
-    "assets/artworks/battleofthenuts/IMG3.JPG"
-  ],
-  contributor: "Neil Ashley L. Apolinar"
-},
-
-{
-  "id": "can-i-take-your-order-please",
-  "title": "Can I Take Your Order Please?", 
-  "artist": "Buhay Mendoza", 
-  "type": "Oil on Canvas", 
-  "locationName": "Life 'n Arts Gallery", 
-  "year": "2026",
-  "description": "This 24 by 18-inch oil painting features a surreal portrait of a figure wearing an orange and gray service uniform, set against a bright green landscape under a blue sky with fluffy white clouds. The figure's head is replaced by a retro cassette tape with cartoonish eyes looking out from the tape reels, supported by a metallic spring neck. Resting on top of the cassette head is a fast-food burger topped with a bright orange cherry.",
-  "analysis": "Buhay Mendoza uses surrealism and pop art elements by combining familiar objects in an unusual way. The bright blue sky, green landscape, and orange uniform create a colorful and noticeable appearance. The figure is placed in the center, making it the main focus of the painting. The cassette tape, spring neck, and burger create a strange combination that stands out from the natural background. The use of everyday objects also gives the artwork a playful and unusual appearance.",
-  "interpretation": "For me, the artwork can be seen as a playful comment on consumer culture and repetitive daily routines. The cassette tape makes me think of repetition because it is used to play recorded sounds over and over. With the service uniform, I see it as a possible representation of how workers can repeat the same tasks or lines during their daily work. The burger on top also adds humor while connecting the artwork to fast-food and consumer culture. The strange combination of objects makes the message more interesting instead of making it feel too serious.",
-  "judgement": "I think this is a fun and creative piece of art because of how it combines ordinary objects in a strange way. The colorful background and unusual character immediately make the painting interesting to look at. I also like how the artwork uses humor while still having a possible message about work and consumer habits. For me, the combination of the cassette, spring, and burger makes the artwork memorable and gives it its own unique style.",
-  "sources": [
-    "Life 'n Arts Gallery, Santa Rosa, Laguna",
-    "https://www.artworkarchive.com/profile/lifenarts-galleryofficial/artwork/can-i-take-your-order-please?artist=buhay-mendoza"
-  ],
-  "photos": [
-    "assets/artworks/canitakeyourorderplease/order1.JPG",
-    "assets/artworks/canitakeyourorderplease/order2.JPG",
-    "assets/artworks/canitakeyourorderplease/order3.JPG"
-  ],
-  contributor: "Neil Ashley L. Apolinar"
-}
-
-
-];
+  {
+    id: "battle-of-the-nuts",
+    title: "Battle of the Nuts",
+    artist: "Ram Mallari",
+    type: "Mixed Media",
+    locationName: "Life 'n Arts Gallery",
+    year: "Unknown",
+    description: "This 25 by 22 by 22 inch mixed media artwork is an intricate steampunk style chess table installation. It is enclosed under an etched acrylic protective case. The checkered board is made from black and tan leather tiles. The opposing chess armies are sculpted entirely from industrial metal hardware like hex nuts, bolts, washers, threaded rods, and spark plugs. One side has a dark metallic silver finish, while the other has a warm copper tone. The table structure features industrial rivets, pipes, and exposed gears, and it is flanked by two matching leather topped stools.",
+    analysis: "Ram Mallari uses his steampunk style by turning common industrial materials into a chess set and table. The different metallic colors help separate the two sides of the chess army. Materials such as nuts, bolts, washers, and spark plugs are arranged to form recognizable chess pieces. The repeated use of these metal parts gives the artwork a consistent industrial appearance. The leather tiles also add a different texture to the metal materials. The title, Battle of the Nuts, connects directly to the actual nuts used throughout the artwork.",
+    interpretation: "I think the artwork can be interpreted as a comment on war and power struggles. The chess pieces represent people or leaders involved in a conflict, while the use of nuts, bolts, and other machine parts makes them look like pieces of a larger machine. This can suggest that those involved in conflicts may only be small parts of something much bigger. The title Battle of the Nuts also adds humor because it refers to the actual nuts used in the artwork while making the idea of a serious battle seem somewhat absurd.",
+    judgement: "I think this is a creative and interesting piece of functional art. The use of ordinary scrap materials to create a detailed chess set makes the artwork unique. The combination of the metal pieces, leather board, gears, and industrial design also makes it visually interesting. Another good part of the artwork is that it is not only meant to be displayed but can also be used as a chess table. Overall, the artwork shows creativity and careful craftsmanship in turning recycled materials into something useful and meaningful.",
+    sources: [
+      "Life 'n Arts Gallery, Santa Rosa, Laguna"
+    ],
+    photos: [
+      "assets/artworks/battleofthenuts/IMG4.JPG",
+      "assets/artworks/battleofthenuts/IMG1.JPG",
+      "assets/artworks/battleofthenuts/IMG2.JPG",
+      "assets/artworks/battleofthenuts/IMG3.JPG"
+    ],
+    contributor: "Neil Ashley L. Apolinar"
+  },
+  {
+    id: "can-i-take-your-order-please",
+    title: "Can I Take Your Order Please?",
+    artist: "Buhay Mendoza",
+    type: "Oil on Canvas",
+    locationName: "Life 'n Arts Gallery",
+    year: "2026",
+    description: "This 24 by 18 inch oil painting features a surreal portrait of a figure wearing an orange and gray service uniform, set against a bright green landscape under a blue sky with fluffy white clouds. The figure's head is replaced by a retro cassette tape with cartoonish eyes looking out from the tape reels, supported by a metallic spring neck. Resting on top of the cassette head is a fast food burger topped with a bright orange cherry.",
+    analysis: "Buhay Mendoza uses surrealism and pop art elements by combining familiar objects in an unusual way. The bright blue sky, green landscape, and orange uniform create a colorful and noticeable appearance. The figure is placed in the center, making it the main focus of the painting. The cassette tape, spring neck, and burger create a strange combination that stands out from the natural background. The use of everyday objects also gives the artwork a playful and unusual appearance.",
+    interpretation: "For me, the artwork can be seen as a playful comment on consumer culture and repetitive daily routines. The cassette tape makes me think of repetition because it is used to play recorded sounds over and over. With the service uniform, I see it as a possible representation of how workers can repeat the same tasks or lines during their daily work. The burger on top also adds humor while connecting the artwork to fast food and consumer culture. The strange combination of objects makes the message more interesting instead of making it feel too serious.",
+    judgement: "I think this is a fun and creative piece of art because of how it combines ordinary objects in a strange way. The colorful background and unusual character immediately make the painting interesting to look at. I also like how the artwork uses humor while still having a possible message about work and consumer habits. For me, the combination of the cassette, spring, and burger makes the artwork memorable and gives it its own unique style.",
+    sources: [
+      "Life 'n Arts Gallery, Santa Rosa, Laguna",
+      "https://www.artworkarchive.com/profile/lifenarts-galleryofficial/artwork/can-i-take-your-order-please?artist=buhay-mendoza"
+    ],
+    photos: [
+      "assets/artworks/canitakeyourorderplease/order1.JPG",
+      "assets/artworks/canitakeyourorderplease/order2.JPG",
+      "assets/artworks/canitakeyourorderplease/order3.JPG"
+    ],
+    contributor: "Neil Ashley L. Apolinar"
+  }
+]
