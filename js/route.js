@@ -108,7 +108,6 @@ function render() {
         src="${thumb}"
         alt=""
         aria-hidden="true"
-        loading="lazy"
       >
       <div class="route-node__badge" aria-hidden="true">${i + 1}</div>
       <div class="route-node__label" aria-hidden="true">${art.title}</div>
