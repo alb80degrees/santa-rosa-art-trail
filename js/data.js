@@ -174,5 +174,50 @@ const ARTWORKS = [
       "assets/artworks/parischampselysees/paris-champs4.JPG"
     ],
     contributor: "Revo Ivan E. Trinidad"
+  }, 
+  {
+    id: "tumbapreso",
+    title: "Tumbapreso",
+    artist: "Otep Bañez",
+    type: "Mixed Media",
+    locationName: "Life 'n Arts Gallery",
+    year: "Unknown",
+    description: "Measuring 11 by 24 by 10.5 inches, this mixed-media diorama sculpture depicts a lively scene of Filipino children playing the traditional street game tumbang preso. Housed in a clear protective display case on a dark wooden base, the composition features six sculpted young boys dressed in casual shorts and colorful shirts. On the left side, four boys prepare and watch with eager postures; in the center, a boy balances dynamically on one leg after having hurled his slipper; on the right, the designated 'it' (taya) lunges forward with an outstretched arm to tag him, while another boy crouches near the fallen can and scattered slippers.",
+    analysis: "Bañez creates a strong sense of freeze-frame kinetic energy through dynamic postures, diagonal lines, and asymmetric grouping. The figures are placed along a horizontal stage, guiding the viewer's eye from the anticipation on the left to the climactic confrontation in the center and right. Contrast is achieved through the varied painted hues of the boys' shirts (blue, orange, red, and yellow) against their warm, earthy skin tones and the muted base. The realistic anatomical tension in the limbs—from bent knees to outstretched arms—lends authenticity and balance to the suspended action.",
+    interpretation: "The artwork celebrates Filipino childhood camaraderie, communal street games (Laro ng Lahi), and uninhibited outdoor recreation. By capturing a split-second turning point in tumbang preso, the piece evokes deep nostalgia for a pre-digital era where neighborhood streets served as playgrounds. It speaks to cultural identity, spontaneous teamwork, and the joy of shared cultural traditions passed down across generations.",
+    judgement: "This sculpture is exceptionally well-crafted, succeeding through expressive character modeling and convincing physical gestures. The artist captures the chaotic yet coordinated spirit of the game with great warmth and narrative clarity, making it an engaging and culturally resonant highlight of the gallery.",
+    sources: [
+      "Life 'n Arts Gallery, Santa Rosa, Laguna"
+    ],
+    photos: [
+  "assets/artworks/tumbapreso/1.JPG",
+  "assets/artworks/tumbapreso/2.JPG",
+  "assets/artworks/tumbapreso/3.JPG",
+  "assets/artworks/tumbapreso/4.JPG",
+  "assets/artworks/tumbapreso/5.JPG",
+  ],
+    contributor: "Earl Laurence J. Lucero"
+  },
+  {
+    id: "tinutolaing",
+    title: "Tinutó (Laing)",
+    artist: "Buhay Mendoza",
+    type: "Oil on canvas",
+    locationName: "Life 'n Arts Gallery",
+    year: "2024",
+    description: "Measuring 24 by 18 inches, this vertical oil on canvas painting portrays a young Filipino girl standing in an open field against rolling green hills and a lavender-tinted sky. She wears a traditional light-colored baro't saya blouse, a yellow patterned skirt, and pink water lily blossoms pinned in her dark hair. Cupped gently in both hands is a fresh green banana leaf holding tinutó (laing), while a small, bright yellow-and-brown sparrow with open wings perches close beside her neck and shoulder. The piece is signed and dated 'Buhay '24' near the bottom right.",
+    analysis: "Mendoza utilizes a harmonious, warm-to-cool palette dominated by golden ochres, vibrant leafy greens, and soft violet-blue skies. The composition centers on the girl's stylized, expressive facial features, with soft lighting illuminating her rounded cheeks and shoulders. Strong contrast is created between the saturated, rich green folds of the banana leaf and the dark, textured laing resting within it. Curved lines in the girl's arms, the outstretched wings of the sparrow, and the contour of the hills in the background create a calm, flowing visual rhythm.",
+    interpretation: "The painting conveys themes of rural abundance, cultural sustenance, and harmony between humankind and nature. Tinutó (taro leaves cooked in coconut milk) symbolizes regional culinary heritage and simple local nourishment. Accompanied by the sparrow and natural floral adornments, the gentle expression of the girl reflects pure innocence, hospitality, and an intimate connection to the land and provincial life.",
+    judgement: "Mendoza delivers a charming, illustrative portrait that combines folk sentimentality with precise figurative skill. The juxtaposition of fine culinary and floral details with whimsical character proportions gives the work warmth and appeal, effectively communicating an enduring pride in Filipino agrarian tradition.",
+    sources: [
+      "Life 'n Arts Gallery, Santa Rosa, Laguna"
+    ],
+    photos: [
+  "assets/artworks/tinutolaing/1.JPG",
+  "assets/artworks/tinutolaing/2.JPG",
+  "assets/artworks/tinutolaing/3.JPG",
+  "assets/artworks/tinutolaing/4.JPG",
+  ],
+    contributor: "Earl Laurence J. Lucero"
   }
 ];
