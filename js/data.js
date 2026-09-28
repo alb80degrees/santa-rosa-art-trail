@@ -237,10 +237,10 @@ const ARTWORKS = [
     "Life 'n Arts Gallery, Santa Rosa, Laguna" 
   ],
   "photos": [
-    "assets/artworks/battleofthenuts/IMG1.jpg",
-    "assets/artworks/battleofthenuts/IMG2.jpg",
-    "assets/artworks/battleofthenuts/IMG3.jpg",
-    "assets/artworks/battleofthenuts/IMG4.jpg"
+    "assets/artworks/battleofthenuts/IMG1.JPG",
+    "assets/artworks/battleofthenuts/IMG2.JPG",
+    "assets/artworks/battleofthenuts/IMG3.JPG",
+    "assets/artworks/battleofthenuts/IMG4.JPG"
   ],
   contributor: "Neil Ashley L. Apolinar"
 },
@@ -261,7 +261,7 @@ const ARTWORKS = [
     "https://www.artworkarchive.com/profile/lifenarts-galleryofficial/artwork/can-i-take-your-order-please?artist=buhay-mendoza"
   ],
   "photos": [
-    "assets/artworks/canitakeyourorderplease/IMG200.jpg"
+    "assets/artworks/canitakeyourorderplease/IMG200.JPG"
   ],
   contributor: "Neil Ashley L. Apolinar"
 }
