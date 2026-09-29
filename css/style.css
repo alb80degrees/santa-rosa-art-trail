@@ -82,6 +82,15 @@ a { color: inherit; text-decoration: none; }
   background-position: 0 0, 50px 110px, 25px 40px, 70px 15px;
 }
 
+/* Modifier to restore the original archival grid on specific pages */
+.liquid-bg.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(90, 88, 84, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90, 88, 84, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: 0 0;
+}
+
 @keyframes grainShift {
   0%, 100% { transform: translate(0, 0); }
   25% { transform: translate(-1%, 1%); }
